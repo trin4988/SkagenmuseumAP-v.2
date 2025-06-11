@@ -1,9 +1,10 @@
 @charset "UTF-8";
 @import url("https://use.typekit.net/bvf0dpa.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 .wrapper {
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 50px;
 }
 
 .main-header {
@@ -864,22 +865,28 @@ div.info-box__divider {
 }
 
 .bento-layout .b {
-
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: b;
 }
 
 .bento-layout .a {
-
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: a;
 }
 
 .bento-layout .b2 {
-
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: b2;
 }
 
 .bento-layout .c {
-
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: c;
 }
 
@@ -2073,7 +2080,7 @@ path.icon-stroke {
 .card-grid {
   display: -ms-grid;
   display: grid;
-
+ 
       grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding: 8px;
@@ -2112,8 +2119,10 @@ path.icon-stroke {
 .card p {
   margin: 5px 0;
   padding: 5px;
-  font-weight: bold;
+  font-weight: 400;
+  font-style: normal;
   color: inherit;
+  font-family: "Special Elite", system-ui;
 }
 
 .card:visited,
@@ -2577,7 +2586,7 @@ path.icon-stroke {
 
 @media screen and (max-width: 768px) {
   .card-grid {
-
+   
         grid-template-columns: repeat(2, 1fr);
   }
   .h1-skagensmalerne {
@@ -2652,7 +2661,7 @@ path.icon-stroke {
     border-radius: 6px;
   }
   .slider-wrapper {
-
+    -ms-scroll-snap-type: x mandatory;
         scroll-snap-type: x mandatory;
   }
   .værker-container img {
@@ -2674,7 +2683,7 @@ path.icon-stroke {
 
 @media screen and (max-width: 480px) {
   .card-grid {
- 
+    -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
@@ -2682,7 +2691,7 @@ path.icon-stroke {
 .bento-container-værker {
   display: -ms-grid;
   display: grid;
- 
+
       grid-template-columns: repeat(9, 1fr);
   grid-auto-rows: 400px;
   gap: 6px;
@@ -4586,7 +4595,7 @@ button.huset-btn:hover::before {
 }
 
 .map-tabs.hidden {
-  left: -370px;
+  left: -500px;
 }
 
 /* Luk-knappen */
@@ -4824,165 +4833,6 @@ button.huset-btn:hover::before {
   border: none;
   border-bottom: 1px solid #ccc;
   margin: 12px 0 0 0;
-
-}
-
-p {
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-
-.heroIntrotekst {
-  margin-top: 8px;
-  font-size: 18px;
-  font-family: Montserrat;
-}
-
-.aegteUng-container {
-  padding: 4% 22%;
-}
-
-.hero-text {
-  text-align: center;
-  margin: 56px 0;
-}
-
-.hero-text h1 {
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.ung-img {
-  max-width: 100%;
-  height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.ungImgContainer {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.aegte-ung_vid {
-  height: 500px;
-  margin-bottom: 56px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.eagteUngintro {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-
-hr {
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: #7098DD;
-  border: none;
-  height: 1px;
-  margin-bottom: 40px;
-}
-
-.ungContent {
-  margin: 0 16% 40px 16%;
-}
-
-.ungContent h3 {
-  font-family: Montserrat;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.sponser {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.ungFirstContent {
-  margin-bottom: 40px;
-}
-
-.quote {
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.quoteBy {
-  font-size: 14px;
-  margin-bottom: 40px;
-}
-
-.ungImgDescription {
-  color: #636363;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  margin-top: 16px;
-  margin-bottom: 40px;
-}
-
-.subImg {
-  margin: 40px 0 40px 0;
-}
-
-.supportProject h3 {
-  text-align: center;
-}
-
-.supportProject img {
-  padding: 10px 40px;
-}
-
-@media only screen and (max-width: 900px) {
-  .ungContent {
-    margin: 0 10% 0 10%;
-  }
-  .ungContent h3 {
-    margin-top: 40px;
-  }
-  .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .logo img {
-    width: 30%;
-  }
-  .quote {
-    margin-top: 40px;
-  }
-  .ung-img {
-    margin-top: 40px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .hero-text h1 {
-    font-size: 32px;
-  }
-  .ungContent h3 {
-    font-size: 22px;
-  }
-
 }
 
 @media (max-width: 768px) {
@@ -5520,21 +5370,21 @@ p {
   font-size: 1.2rem;
 }
 
-.udstillingContent {
+/* .udstillingContent {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 80px;
   margin-bottom: 80px;
-}
+} */
 
 .highlightText {
   font-weight: 600;
 }
 
-.udstillingImg {
+/* .udstillingImg {
   width: 100%;
   display: block;
-}
+} */
 
 .udstillingKunsteren {
   color: #636363;
@@ -5570,7 +5420,7 @@ p {
 .card-grid2 {
   display: -ms-grid;
   display: grid;
-
+ 
       grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   padding: 8px;
