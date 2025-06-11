@@ -1,0 +1,368 @@
+.plan-hero {
+    background-image: url(../img/plan-hero.webp);
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;
+    height: 400px;                          
+    display: flex;
+    flex-direction: column;
+          
+    color: rgb(255, 255, 255);                   
+    position: relative;
+    margin-top: 2rem;
+    margin-left: calc(-10vw);
+    margin-right: calc(-10vw);
+
+    h1{
+        margin: 12px 0px 12px 140px ;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: start;
+       
+        
+    }
+    p{
+        margin-left: 140px;
+        font-size: 18px;
+        text-align: start;
+    }
+
+  }
+
+  .plan-hero-text{
+    margin-top: 6rem;
+  }
+
+  .divider-wrapper-lokation{
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    margin: 40px 0px 40px 0px;
+    justify-content: space-between;
+  
+  
+    h2{
+      font-size: 24px;
+      white-space: nowrap;
+      color: #4D7D4D;
+    }
+  }
+
+  .lokation__divider {
+    height: 0.5px;
+    width: 100%;
+    background-color: #4D7D4D;
+  }
+
+  .map-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 40px 0px 80px 0px;
+    
+  }
+
+  // tabs begyndelse 
+  .aktiv-map{
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  .map-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .map-tabs {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    margin: 20px;
+    padding: 24px 32px;
+    background: white;
+    border-radius: 0px 6px 6px 0px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    z-index: 10;
+  }
+  
+  
+  .map-tab {
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .map-tab:last-child {
+    border-bottom: none;
+  }
+  
+  .map-tab:hover {
+    background: #f9f9f9;
+  }
+  
+  .map-tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .map-tab-title {
+    font-weight: bold;
+  }
+  
+  .map-tab-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0px 0px 24px 24px;
+  }
+  
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: green;
+    
+  }
+  
+  .map-tab-details {
+    display: none;
+    padding-top: 8px;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  .map-tab.open .map-tab-details {
+    display: block;
+  }
+  
+  .map-tab .arrow {
+    margin-left: auto;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .map-tab.open .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .map-tabs.hidden {
+    left: -370px; 
+  }
+  
+  /* Luk-knappen */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Åben-knappen */
+  .open-tab-btn {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 10px 14px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    z-index: 20;
+  }
+  .open-tab-btn.visible {
+    display: block;
+  }
+
+  .map-tab-title {
+    display: flex;
+    align-items: center;
+    gap: 18px; 
+    margin: 24px 24px 18px 24px;
+    white-space: nowrap;
+  }
+  
+  .map-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;  
+    height: 30px; 
+  }
+  
+  // kontakt oplysninger
+  .divider-wrapper-kontakt{
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    margin: 40px 0px 64px 0px;
+    justify-content: space-between;
+  
+  
+    h2{
+      font-size: 24px;
+      white-space: nowrap;
+      color: #3D62A9;
+    }
+  }
+
+  .kontakt__divider {
+    height: 0.5px;
+    width: 100%;
+    background-color: #3D62A9;
+  }
+
+
+  .kontakt-sektion {
+    display: flex;
+    justify-content: center;
+    gap: 24px; 
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+  
+  .kontakt-person {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 16px; 
+    font-size: 1.2rem; 
+  }
+  
+  .kontakt-person p {
+    margin: 0; 
+  }
+  
+  .kontakt-person img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .kontakt-knap {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 26px;
+    cursor: pointer;
+    margin-bottom: 80px;
+    background: #F9CB80;
+    border: 2px solid #F9CB80;
+    border-radius: 60px;
+    
+  }
+  
+  .kontakt-knap:hover {
+    background: transparent;
+    border: 2px solid #F9CB80;
+  }
+  
+  // FAQ
+
+  .divider-wrapper-faq{
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    margin: 40px 0px 40px 0px;
+    justify-content: space-between;
+  
+  
+    h2{
+      font-size: 24px;
+      white-space: nowrap;
+      color: #C48222;
+    }
+  }
+
+  .faq__divider {
+    height: 0.5px;
+    width: 100%;
+    background-color: #C48222;
+  }
+
+  .faq {
+  width: 80vw;            
+  padding: 40px 20px;  
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin-bottom: 80px;
+  }
+  
+  .faq-item {
+    padding: 12px 0;
+  }
+  
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #222;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  
+  .faq-question .arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    user-select: none;
+  }
+  
+  
+  .faq-question.active .arrow {
+    transform: rotate(90deg);
+  }
+  
+ 
+  .faq-answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    color: #444;
+    padding-left: 12px;
+    margin-top: 8px;
+  }
+  
+  
+  .faq-answer.active {
+    max-height: 500px; 
+  }
+  
+  .faq-item hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 12px 0 0 0;
+  }
+  
+  
+  // media query
+
+  @media (max-width: 768px) {
+    .plan-hero{
+      h1{
+        text-align: center;
+        font-size: 32px;
+        margin: 0;
+      }
+      p{
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+  }

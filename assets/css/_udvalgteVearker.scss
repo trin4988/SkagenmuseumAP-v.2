@@ -1,0 +1,97 @@
+udvalgteVearkerMainContent{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px 0 20px 0;
+
+    h1{
+        font-size: 64px;
+        font-family: lust;
+        text-align: center;
+        margin-bottom: 20px;
+       
+    }
+    h4{
+        color: #161616;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+}
+
+.udvalgte-titel{
+    margin-bottom: 80px;
+}
+
+.vearkImg{
+    width: 100%;
+    display: block;
+}
+.imgWrapper{
+    max-width: 570px;
+    margin: 0 auto;
+}
+.vearkInfo{
+    margin-top: 16px;
+}
+.afKunster{
+    font-size: 14px;
+    color: #161616;
+    font-weight: 400;
+    margin: 0;
+    font-family: Montserrat;
+}
+.vearkContainer{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.vearkImg{
+    filter: drop-shadow(-3px 10px 16px rgba(3, 14, 23, 0.30));
+}
+ 
+/* ------knap------- */
+.mainBtn2{
+    border-radius: 60px;
+    background: #F9CB80;
+    padding: 12px 26px;
+    border: 2px solid #F9CB80;
+    font-family: Montserrat;
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0 auto;
+    transition: .3s;
+    margin-bottom: 40px;
+}
+.mainBtn2:hover{
+    background-color: white;
+    border-radius: 60px;
+    border: 2px solid #F9CB80;
+}
+ 
+/* --------responsiv---------- */
+ 
+/* tablet */
+@media screen and (max-width: 600px){
+.vearkContainer{
+    display: block;
+}
+.veark{
+    margin-bottom: 24px;
+}
+h1{
+    font-size: 32px;
+}
+h4{
+    font-size: 18px;
+}
+}
+/* mobile */
+@media screen and (max-width: 400px){
+ 
+}

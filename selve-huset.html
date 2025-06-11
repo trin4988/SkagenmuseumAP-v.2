@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oversigt og de enkelte huse, med informatiom om huset og historiem og mulighed for køb af billedetter">
+    <meta name="keywords" content="Skagen, skagens museer, billetter, historie, anchers hus, drachmann hus">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <title>Skagen museum</title>
+</head>
+<body>
+      <!--Start på navigation-->
+   <div class="wrapper">
+    <header class="main-header">
+        <!--Top menuen start-->
+        <div class="top-box">
+          <div class="top-box-wrapper">
+            <ul class="top-menu">
+              <li><a href="#">Ehverv</a></li>
+              <li><a href="#">Klubben</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Skagen Air</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M0.0800781 0.914062H15.5801V10.4141H0.0800781V0.914062Z" fill="#D22F27"/>
+                <path d="M15.5801 4.91406H6.33008V0.914062H4.83008V4.91406H0.0800781V6.41406H4.83008V10.4141H6.33008V6.41406H15.5801V4.91406Z" fill="white"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      <!--Top menu slutter-->
+      <!--Start på navigationen med dropdown-->
+      <nav class="main-nav mainNav">
+        <div class="nav-container">
+          <a href="index.html">
+          <img class="logo" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens museers logo">
+        </a>
+          <ul class="nav-menu">
+            <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+              <a href="#" class="dropdown-link">Besøg <span class="arrow-down"></span></a>
+              <ul class="dropdown">
+                <li><a href="billet-side.html">Åbningstider og priser</a></li>
+                <li><a href="#">Omvisningg</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Museumbutikken</a></li>
+                <li><a href="planlagning.html">Praktisk information</a></li>
+                <li><a href="#">Skoleudflygt</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Udstillinger <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                  <li><a href="#">Aktuelle Udstillinger</a></li>
+                  <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="skagensmalerne.html">Skagensmalerne</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="arrangementer.html">Arrangementer</a>
+                <ul class="dropdown">
+            
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Om museerne <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Vidste du? <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="#">Vielser</a></li>
+                  <li><a href="#">Støt os</a></li>
+                  <li><a href="#">Cafe</a></li>
+                  <li><a href="#">Fotobestilling</a></li>
+                  <li><a href="#">Låneanmodninger</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="aegte-ung.html">Ægte ung</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+          </ul>
+          <div class="buy-button">
+            <div class="button-wrapper">
+            <a href="#">Køb billet til kunsten</a>
+          </div>
+        </div>
+        </div>
+        </nav>
+        
+      </header>
+    </div>
+     <!--burger på naviagtionen-->
+     <a href="index.html">
+      <img class="logo-mobile" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens logo">
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        &#9776; <!-- burger ikon -->
+      </button>
+      <!--navigation på mobil-->
+      <nav class="mobile-nav" id="mobile-menu" aria-hidden="true">
+        <ul class="top-menu">
+          <li><a href="#">Ehverv</a></li>
+          <li><a href="#">Klubben</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Skagen Air</a></li>
+          <li><a href="#">Top 5</a></li>
+        </ul>
+
+        <ul>
+          <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+            <a href="#">Besøg</a>
+            <ul class="dropdown">
+              <li><a href="billet-side.html">Åbningstider og priser</a></li>
+              <li><a href="#">Omvisningg</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Museumbutikken</a></li>
+              <li><a href="planlagning.html">Praktisk information</a></li>
+              <li><a href="#">Skoleudflygt</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown dropdown-click">
+              <a href="#">Udstillinger</a>
+              <ul class="dropdown">
+                <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                <li><a href="#">Aktuelle Udstillinger</a></li>
+                <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="skagensmalerne.html">Skagensmalerne</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="arrangementer.html">Arrangementer</a>
+              <ul class="dropdown">
+          
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Om museerne</a>
+              <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Vidste du?</a>
+              <ul class="dropdown">
+                <li><a href="#">Vielser</a></li>
+                <li><a href="#">Støt os</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Fotobestilling</a></li>
+                <li><a href="#">Låneanmodninger</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="aegte-ung.html">Ægte ung</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+          <li><a href="#" class="buy-button">Køb billet</a></li>
+        </ul>
+      </nav>
+    <!--Slut på naviagtionen-->
+
+            <main>
+                <a href="om-museerne.html" class="tilbage-knap-huset">
+                    <span class="pil-tilbage-huset">&#8592;</span> Gå tilbage
+                  </a>
+
+                  <section class="skagenskunstmuseum-intro">
+                    <div class="divider-wrapper-huset">
+                      <h1>Skagens kunstmuseum</h1>
+                      <div class="huset__divider"></div>
+                    </div>
+                  
+                    <p>Skagens Museum blev stiftet den 20. oktober 1908 i Brøndums Hotel af bl.a. <br> Ancher, Krøyer og Tuxen.</p>
+                  
+                    <div class="huset-indhold-intro">
+                      <img src="./assets/img/skagenskunstmuseum.webp" alt="Skagens kunstmuseum">
+                  
+                      <div class="huset-tekst">
+                        <p class="h3-fake">SKAGENS KUNSTMUSEUM</p>
+                        <p>Museet åbner i dag fra kl. 10 - 17</p>
+                        <hr>
+                        <p><strong  class="strong-huset">10:00 - 17:00</strong></p>
+                        <p>Tirsdag til søndag</p>
+                        <hr>
+                        <p><strong class="strong-huset">LUKKET</strong></p>
+                        <p>Mandag</p>
+                        <hr>
+                        <p class="huset-info1"><strong>Speciale åbningstider:</strong> i perioden fra den 1 nov. til 21 dec. er der åbnet tirsdag til søndag fra 10 - 16</p>
+                        <hr>
+                        <p class="huset-info2"><strong>Helligdage:</strong> i juleferien holder museet lukket fra d. 22 til 26 dec. samt d. 31</p>
+                        <hr>
+                      </div>
+                    </div>
+                  </section>
+                    <div class="divider-wrapper-huset">
+                        <h3>ENTRE PRIS</h3>
+                        <div class="entre__divider"></div>
+                      </div>
+                      <section class="huset-content">
+                        <div class="huset-indhold">
+                          <h4>Billet</h4>
+                          <p>Oplev mesterværkerne på Skagens Museum, der huser verdens største samling af skagensmalernes kunst. </p>
+                        </div>
+                      
+                        <!-- Wrapper til boks og knap -->
+                        <div class="huset-boks-wrapper">
+                          <div class="huset-box">
+                            <div class="pris-linje">
+                              <p>Pris for voksne</p>
+                              <p>140 kr.</p>
+                            </div>
+                            <hr class="huset-streg">
+                      
+                            <div class="pris-linje">
+                              <p>Pris for ung <span>(under 28 år.)</span></p>
+                              <p>90 kr.</p>
+                            </div>
+                            <hr class="huset-streg">
+                      
+                            <div class="pris-linje">
+                              <p>Børn <span>(under 18 år.)</span></p>
+                              <p>GRATIS</p>
+                            </div>
+                            <hr class="huset-streg">
+                          </div>
+                          <div class="huset-btn-wrapper">
+                          <button class="huset-btn">Køb billet til kunsten</button>
+                        </div>
+                        </div>
+                      
+                      </section>
+                      <div class="huset-divider"></div>
+                      <section>
+                       
+                          <section class="huset-content">
+                            <div class="huset-indhold">
+                              <h4>Kombibillet</h4>
+                              <p>Vil du se det hele? Godt valg! Køb en kombibillet, som giver adgang til Skagens Museum, Anchers Hus og Drachmann Hus.</p>
+                            </div>
+                          
+                            <!-- Wrapper til boks og knap -->
+                            <div class="huset-boks-wrapper">
+                              <div class="huset-box">
+                                <div class="pris-linje">
+                                  <p>Kombibillet for voksne</p>
+                                  <p>200 kr.</p>
+                                </div>
+                                <hr class="huset-streg">
+                          
+                                <div class="pris-linje">
+                                  <p>Kombibillet for børn <span>(under 28 år.)</span></p>
+                                  <p>GRATIS</p>
+                                </div>
+                                
+                              </div>
+                              <div class="huset-btn-wrapper">
+                              <button class="huset-btn">Køb billet til kunsten</button>
+                            </div>
+                            </div>
+                      </section>
+
+                      <section>
+                        <div class="divider-wrapper-historie">
+                            <h2>Historie om museet</h1>
+                            <div class="huset_historie__divider"></div>
+                          </div>
+                          <div class="historie-text">
+                            <p>Kunstnerkolonien i Skagen blev grundlagt, da en ung Holger Drachmann besøgte det lille fiskersamfund for første gang i 1872. I årene efter fulgte en gruppe af unge kunstnere, der alle kendte hinanden fra kunstakademiet i København. På den måde opstod efterhånden en af Skandinaviens mest kendte og anerkendte kunstnerkolonier med navne som Michael og Anna Ancher, P.S. Krøyer, Laurits Tuxen, Holger Drachmann, Carl Locher, Thorvald Bindesbøll, Ulrik Plesner, Christian Krohg og Oscar Björck.</p>
+                            <p>Skagens Museum blev bygget i Brøndum Hotels gamle have. Her ligger stadig de to fredede bygninger, Havehuset, hvor Michael og Anna Ancher boede de første år af deres ægteskab, samt et gamle korntørringsmagasin, som P.S. Krøyer brugte som atelier. Da museumsbygningen stod færdig i 1928 bestod samlingen af 325 værker. Gennem årene, og ikke mindst efter fusionen med Michael og Anna Anchers Hus og Drachmanns Hus i slutningen af 2014, er den fælles samling nu vokset til næsten 20.000 værker.</p>
+                            <img src="./assets/img/historie-huset.webp" alt="">
+                            <h3>Bygning om museet</h3>
+                            <p>Fra 1911 og indtil museumsbygningen, der blev tegnet af Ulrik Plesner, stod færdig i 1928, fungerede Krøyers Hus som udstillingssted. Krøyers Hus fortsatte som en afdeling af Skagens Museum indtil 1940, da 2. verdenskrig brød ud. Brøndums spisesal blev flyttet over på museet i 1946. Den dag i dag udgør spisesalen stadig hjertet af museet, og er på den måde både kernen af og hele begyndelsen på museets historie.</p>
+                            <p>Museet på Brøndumsvej er blevet udvidet flere gange. I 1982 fik museet sin første tilbygning, der indeholdt et øget udstillingsareal samt et lille tegningsmagasin. I 1989 blev der udvidet med en butik, toiletter og en mindre kælder til depot og personale. I slutningen af 2004 blev museet udvidet endnu engang, denne gang med et lille gult bindingsværkshus, beliggende på Sct. Laurentii Vej 9. Huset var en gave fra Bikubenfonden. <br>
+                                I 2008, hundredeåret for stiftelsen af Skagens Museum, blev beslutningen om en gennemgribende renovering og udvidelse af museet taget. Projektet gik i gang i 2014, og den 12. februar 2016 kunne Hendes Majestæt Dronning Margrethe endelig erklære det udvidede og gennemrenoverede Skagens Museum for åbent.</p>
+                          </div>
+                      </section>
+                      <div class="divider-wrapper-museer">
+                        <h2>Historie om museet</h2>
+                        <div class="huset_muser__divider"></div>
+                      </div>
+
+                      <section class="museer-wrapper">
+                        <img src="./assets/img/ancherhus.webp" alt="Billede af Anchers hus">
+                        <div class="museer-text">
+                          <h2>Anchers hus</h2>
+                          <p>Anchers Hus var hjem for kunstnerparret Michael og Anna Ancher samt deres datter Helga. I dag står huset som et unikt vidnesbyrd om deres liv og virke. </p>
+                          <div class="museer-btn-container">
+                          <a href=""><button class="muser-btn">Bliv klogere på museet</button></a>
+                        </div>
+                        </div>
+
+                        
+                      </section>
+                      <section class="museer-wrapper2">
+                        <img src="./assets/img/drachmannhus.webp" alt="Billede af Drachmann hus">
+                        <div class="museer-text">
+                          <h2>Drachmanns hus</h2>
+                          <p>Forfatteren og maleren Holger Drachmann boede i huset fra 1902 til sin død i 1908 sammen med sin tredje hustru Soffi. Huset vidner om hans farverige liv og mangefacetterede personlighed.</p>
+                          <div class="museer-btn-container">
+                          <a href=""><button class="muser-btn">Bliv klogere på museet</button></a>
+                        </div>
+                        </div>
+
+                        
+                      </section>
+                     
+                      </div>
+                      
+                
+                  
+            </main>
+
+            <footer class="footer">
+              <div class="footer__logo">
+                <img src="./assets/img/skagenskunstmusum-footer.png" alt="Skagens logo">
+              </div>
+            
+              <div class="footer__columns">
+                <div class="footer__column">
+                  <h4>Genvej</h4>
+                  <a href="#">English</a>
+                  <a href="#">Deutsch</a>
+                  <a href="#">Medarbejder</a>
+                  <a href="#">Ledigestillinger</a>
+                  <div class="footer__column">
+               
+                  
+                    <div class="copyright">
+                      <div class="copyright__text">
+                        <div class="copyright__topline">
+                          <img src="./assets/icons/copyright.png" alt="Copyright ikon">
+                          <p>Skagens Kunstmuseer</p>
+                        </div>
+                        <p class="cvr">CVR: 12345678</p>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  
+                </div>
+                <div class="footer__column">
+                  <h4>Vores museer</h4>
+                  <a href="#">Skagens kunstmuseum</a>
+                  <a href="#">Anchers hus</a>
+                  <a href="#">Drachmanns hus</a>
+                </div>
+                <div class="footer__column">
+                  <h4>Besøg</h4>
+                  <a href="#">Åbningstider og priser</a>
+                  <a href="#">Omvisning</a>
+                  <a href="#">Cafe</a>
+                  <a href="#">Museumbutikken</a>
+                  <a href="#">Undervisning</a>
+                </div>
+                <div class="footer__column">
+                  <h4>Kontakt os</h4>
+                  <p>Info@skagensmuseum.dk</p>
+                  <p>Tel. +45 9844 6444</p>
+                  <p>Brøndumsvej 4 DK-9990 Skagen</p>
+        
+                  <div class="footer__icons">
+                    <a href="#"><img src="./assets/icons/facebook-footer.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/icons/instagram-footer.png" alt="Instagram"></a>
+                    <a href="#"><img src="./assets/icons/twitter-footer.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/icons/pinterest-footer.png" alt="Pinterest"></a>
+                  </div>
+        
+                  <div class="cookies">
+                    <p>Cookie Privatlivspolitik</p>
+                  </div>
+                </div>
+               
+              </div>
+            </footer>
+
+            <script src="./assets/js/nav.js"></script>
+</body>
+</html>

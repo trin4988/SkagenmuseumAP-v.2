@@ -1,0 +1,70 @@
+@import 'navigation';
+@import 'footer';
+@import 'forside';
+@import 'skagensmalerne';
+@import 'vaerker';
+@import 'enkelt-vaerk';
+@import 'om-museer';
+@import 'selve-arrangementer';
+@import 'selve-huset';
+@import 'billet-side';
+@import 'planlagning';
+@import '_aegte-ung';
+@import 'udvalgteVearker';
+@import 'udstillinger';
+@import 'selve-udstillinger';
+@import 'arrangementer';
+
+
+@import url("https://use.typekit.net/bvf0dpa.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    p a button{
+        font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    p, a, button{
+        font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+    }
+}
+// Farvepalette
+    $midnightBlue: #113243;
+    $blueRandom: #13374B;
+    $gristligPink: #F6B2B6;
+    $psSort: #2B2A27;
+    $psMorkeblaa: #30384D;
+    $psGron: #4D7D4D;
+    $psStovetblaa: #618196;
+    $psBabyblaa: #6387BB;
+    $psMosgron: #6B735C;
+    $psHimmelblaa: #7098DD;
+    $psBlodrod: #7B2118;
+    $psGammelrosaa: #884A57;
+    $psMorkeorange: #A33D27;
+    $psGraeskarorange: #B76438;
+    $psGraa: #BAC0BE;
+    $psStovetlyserrod: #BE777F;
+    $psBeige: #C2B593;
+    $psSolsikkegul: #C48222;
+    $psPastelgul: #DEAF69;
+    $psGrissepink: #D3998E;
+
+   
+    h1{
+        font-family: lust;
+    }
+    

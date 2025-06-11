@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.museer-hero {
+    background-image: url(../img/museer-hero.webp);
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;
+    height: 450px;                          
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+    color: white;                   
+    position: relative;
+    margin-top: 2rem;
+    margin-left: calc(-10vw);
+    margin-right: calc(-10vw);
+
+    h1{
+        margin: 12px 0px 12px 140px ;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: left;
+        
+    }
+    p{
+        margin-left: 140px;
+        font-size: 18px;
+        width: 40%;
+        text-align: left;
+     
+    }
+
+  }
+
+
+
+.tilbage-knap-museer{
+display: flex;
+justify-content: start;
+gap: 1rem;
+text-decoration: none;
+color: #ffffff;
+font-weight: 400;
+font-size: 16px;
+margin: 2rem 0rem 6rem 140px;
+
+}
+.pil-tilbage-museer{
+font-size: 1.2rem;
+}
+
+.museer-container{
+    margin-bottom: 120px;
+}
+
+ .divider-wrapper-muser{
+    display: flex;
+    align-items: center;
+    gap: 4rem; 
+    margin: 80px 0px 40px 0px;
+    justify-content: space-between;
+  
+  
+    h2{
+      font-size: 24px;
+      white-space: nowrap;
+      color: #3D62A9;
+    }
+  }
+ 
+  .museer-divider{
+    width: 100%;
+    height: 1px;
+    background-color: #3D62A9
+  }
+
+
+  .museum-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    align-items: stretch;
+    height: 400px;
+    
+  }
+  
+  .museum-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    justify-content: space-between;
+  }
+  
+  .museum-wrapper img {
+    flex: 1;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    
+  }
+  
+  .muser-btn {
+    margin-top: auto;
+    padding: 12px 26px;
+    font-size: 16px;
+    background-color: #F9CB80;
+    color: rgb(0, 0, 0);
+    border: 2px solid #F9CB80;
+    border-radius: 60px;
+    cursor: pointer;
+  }
+  
+  .muser-btn:hover {
+    background-color: white;
+    border-radius: 60px;
+    border: 2px solid #F9CB80;
+  }
+  
+  .museer-splitter{
+    margin: 87px 0px 87px 0px;
+    border: none;
+    border-top: 1px solid #7098DD; 
+    height: 0; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .divider-wrapper-muser {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+  
+      h2 {
+        font-size: 20px;
+      }
+    }
+  
+    .museum-wrapper {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      gap: 2rem;
+      text-align: center;
+    }
+  
+    .museum-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  
+    .museum-text {
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1rem;
+       h2{
+        margin-top: 40px;
+       }
+    }
+  
+    .muser-btn {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .museer-hero {
+      height: auto;
+      padding: 2rem 1rem;
+      margin-left: calc(-10vw);
+      margin-right: calc(-10vw);
+  
+      h1, p {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+  
+      h1 {
+        font-size: 28px;
+        margin-top: 10px;
+      }
+  
+      p {
+        font-size: 16px;
+        width: 80%;
+        margin-top: 10px;
+      }
+    }
+  
+    .tilbage-knap-museer {
+     margin: 0;
+     margin-left: 80px;
+      justify-content: left;
+    }
+  }
+  

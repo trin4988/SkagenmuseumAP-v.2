@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Udvalgte værker fra Skagens kunstmuseum">
+    <meta name="keywords" content="Skagen, Skagen kunstmuseer, Skagen museum, værker, udvalgte værker, Michael Ancher, P.S. Krøyer, Anna Ancher, Holger Drachmann">
+    <title>Udvalgte Værker</title>
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+  <!--Start på navigation-->
+  <div class="wrapper">
+    <header class="main-header">
+        <!--Top menuen start-->
+        <div class="top-box">
+          <div class="top-box-wrapper">
+            <ul class="top-menu">
+              <li><a href="#">Ehverv</a></li>
+              <li><a href="#">Klubben</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Skagen Air</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M0.0800781 0.914062H15.5801V10.4141H0.0800781V0.914062Z" fill="#D22F27"/>
+                <path d="M15.5801 4.91406H6.33008V0.914062H4.83008V4.91406H0.0800781V6.41406H4.83008V10.4141H6.33008V6.41406H15.5801V4.91406Z" fill="white"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      <!--Top menu slutter-->
+      <!--Start på navigationen med dropdown-->
+      <nav class="main-nav mainNav">
+        <div class="nav-container">
+          <a href="index.html">
+          <img class="logo" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens museers logo">
+        </a>
+          <ul class="nav-menu">
+            <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+              <a href="#" class="dropdown-link">Besøg <span class="arrow-down"></span></a>
+              <ul class="dropdown">
+                <li><a href="billet-side.html">Åbningstider og priser</a></li>
+                <li><a href="#">Omvisningg</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Museumbutikken</a></li>
+                <li><a href="planlagning.html">Praktisk information</a></li>
+                <li><a href="#">Skoleudflygt</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Udstillinger <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                  <li><a href="#">Aktuelle Udstillinger</a></li>
+                  <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="skagensmalerne.html">Skagensmalerne</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="arrangementer.html">Arrangementer</a>
+                <ul class="dropdown">
+            
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Om museerne <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Vidste du? <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="#">Vielser</a></li>
+                  <li><a href="#">Støt os</a></li>
+                  <li><a href="#">Cafe</a></li>
+                  <li><a href="#">Fotobestilling</a></li>
+                  <li><a href="#">Låneanmodninger</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="aegte-ung.html">Ægte ung</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+          </ul>
+          <div class="buy-button">
+            <div class="button-wrapper">
+            <a href="#">Køb billet til kunsten</a>
+          </div>
+        </div>
+        </div>
+        </nav>
+        
+      </header>
+    </div>
+     <!--burger på naviagtionen-->
+     <a href="index.html">
+      <img class="logo-mobile" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens logo">
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        &#9776; <!-- burger ikon -->
+      </button>
+      <!--navigation på mobil-->
+      <nav class="mobile-nav" id="mobile-menu" aria-hidden="true">
+        <ul class="top-menu">
+          <li><a href="#">Ehverv</a></li>
+          <li><a href="#">Klubben</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Skagen Air</a></li>
+          <li><a href="#">Top 5</a></li>
+        </ul>
+
+        <ul>
+          <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+            <a href="#">Besøg</a>
+            <ul class="dropdown">
+              <li><a href="billet-side.html">Åbningstider og priser</a></li>
+              <li><a href="#">Omvisningg</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Museumbutikken</a></li>
+              <li><a href="planlagning.html">Praktisk information</a></li>
+              <li><a href="#">Skoleudflygt</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown dropdown-click">
+              <a href="#">Udstillinger</a>
+              <ul class="dropdown">
+                <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                <li><a href="#">Aktuelle Udstillinger</a></li>
+                <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="skagensmalerne.html">Skagensmalerne</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="arrangementer.html">Arrangementer</a>
+              <ul class="dropdown">
+          
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Om museerne</a>
+              <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Vidste du?</a>
+              <ul class="dropdown">
+                <li><a href="#">Vielser</a></li>
+                <li><a href="#">Støt os</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Fotobestilling</a></li>
+                <li><a href="#">Låneanmodninger</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="aegte-ung.html">Ægte ung</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+          <li><a href="#" class="buy-button">Køb billet</a></li>
+        </ul>
+      </nav>
+    <!--Slut på naviagtionen-->
+    <main class="udvalgteVearkerMainContent">
+      <h1 class="udvalgte-titel">Udvalgte værker</h1>
+      <!-- Section 1 - to værker -->
+      <section class="vearkContainer">
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/Rhododendron.webp"
+            alt="Maleriet Rhododendron af Laurits Tuxen i guldramme"
+          /></a>
+          <div class="vearkInfo">
+            <h4>Rhododendron i Dagminnes have. Skagen</h4>
+            <p class="afKunster">Af Laurits Tuxen</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/EnStrandPromenade.webp"
+            alt="Maleriet En Strandpromenade af Micheal Ancher i guldramme"
+          /></a>
+          <div class="vearkInfo">
+            <h4>En strandpromenade</h4>
+            <p class="afKunster">Af Micheal Ancher</p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 - tre værker -->
+      <section class="vearkContainer">
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/SommeraftenVedSkagen.webp"
+            alt="Maleriet Sommeraften ved Skagen af P.S.Krøyer i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Sommeraften ved Skagen</h4>
+            <p class="afKunster">Af P.S.Krøyer</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/AnnaVenderHjem.webp"
+            alt="Maleriet Anna Ancher vender hjem fra marken af Af Michael Ancher i guldramme"
+          /></a>
+          <div class="vearkInfo">
+            <h4>Anna Ancher vender hjem fra marken</h4>
+            <p class="afKunster">Af Michael Ancher</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/SommeraftenVedSkagenStrand.webp"
+            alt="Maleriet Sommeraften på Skagen Sønderstrand af Af P.S.Krøyer i guldramme"
+          /></a>
+          <div class="vearkInfo">
+            <h4>Sommeraften på Skagen Sønderstrand</h4>
+            <p class="afKunster">Af P.S.Krøyer</p>
+          </div>
+        </div>
+      </section>
+      <!-- to værker -->
+      <section class="vearkContainer">
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/SanktHansblusPaaSkagenStrand.webp"
+            alt="Maleriet Sankt Hansblus på Skagens strand af Af P.S.Krøyer i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Sankt Hansblus på Skagens strand</h4>
+            <p class="afKunster">Af P.S.Krøyer</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/FiksereIFeard.webp"
+            alt="Maleriet Fiskere i færd med at sætte en rorsbåd i vandet af Micheal Ancher i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Fiskere i færd med at sætte en rorsbåd i vandet</h4>
+            <p class="afKunster">Af Micheal Ancher</p>
+          </div>
+        </div>
+      </section>
+      <!-- tre værker -->
+      <section class="vearkContainer">
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/PigenMedSkolsikkerne.webp"
+            alt="Maleriet Pigen med solsikkerne af Af Michael Ancher i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Pigen med solsikkerne</h4>
+            <p class="afKunster">Af Michael Ancher</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/InterieorMedKlematis.webp"
+            alt="Maleriet Interiør med klematis Af Anna Ancher i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Interiør med klematis</h4>
+            <p class="afKunster">Af Anna Ancher</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/AnnaLeasendeIDaglistuen.webp"
+            alt="Maleriet Anna Ancher læsende i dagligstuen Af Helga Ancher i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Anna Ancher læsende i dagligstuen</h4>
+            <p class="afKunster">Af Helga Ancher</p>
+          </div>
+        </div>
+      </section>
+      <!-- to værker -->
+      <section class="vearkContainer">
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/Klitlandskab.webp"
+            alt="Maleriet Klitlandskab. Skib i horisonten af Af Holger Drachmann i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Klitlandskab. Skib i horisontenn</h4>
+            <p class="afKunster">Af Holger Drachmann</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/Ageposten.webp"
+            alt="Maleriet Ageposten af Carl Locher  i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Ageposten</h4>
+            <p class="afKunster">Af Carl Locher</p>
+          </div>
+        </div>
+      </section>
+      <!-- tre værker -->
+      <section class="vearkContainer">
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/Koekkeninterioer.webp"
+            alt="Maleriet Køkkeninteriør af Af Viggo Johansen i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Køkkeninteriør</h4>
+            <p class="afKunster">Af Viggo Johansen</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/PortraitAneHedvig.webp"
+            alt="Maleriet Portræt af Ane Hedvig Brøndum af Anna Ancher i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Portræt af Ane Hedvig Brøndum</h4>
+            <p class="afKunster">Af Anna Ancher</p>
+          </div>
+        </div>
+        <div class="veark">
+          <a href="enkelt-vaerk.html">
+          <img
+            class="vearkImg"
+            src="assets/img/udvagteVearkerImg/PortraitKunterensForlovede.webp"
+            alt="Maleriet Portræt af kunstnerens forlovede, Anna Brøndum af Michael Ancher i guldramme"
+          /> </a>
+          <div class="vearkInfo">
+            <h4>Portræt af kunstnerens forlovede, Anna Brøndum</h4>
+            <p class="afKunster">Af Michael Ancher</p>
+          </div>
+        </div>
+      </section>
+      <!-- knap med hover -->
+      <button class="mainBtn2">
+        Vis flere værker<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="10"
+          viewBox="0 0 16 10"
+          fill="none"
+        >
+          <path
+            d="M7.99201 9.49469C7.88719 9.49597 7.78327 9.4753 7.68692 9.43401C7.59057 9.39272 7.50393 9.33172 7.43257 9.25493L0.23976 2.06213C-0.0799201 1.74245 -0.0799201 1.24694 0.23976 0.92726C0.559441 0.60758 1.05494 0.60758 1.37463 0.92726L8.00799 7.56063L14.6254 0.943244C14.9451 0.623564 15.4406 0.623564 15.7602 0.943244C16.0799 1.26292 16.0799 1.75843 15.7602 2.07811L8.56743 9.27092C8.40759 9.43076 8.1998 9.51068 8.00799 9.51068L7.99201 9.49469Z"
+            fill="#0B0B0B"
+          />
+        </svg>
+      </button>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./assets/img/skagenskunstmusum-footer.png" alt="Skagens logo">
+      </div>
+    
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h4>Genvej</h4>
+          <a href="#">English</a>
+          <a href="#">Deutsch</a>
+          <a href="#">Medarbejder</a>
+          <a href="#">Ledigestillinger</a>
+          <div class="footer__column">
+       
+          
+            <div class="copyright">
+              <div class="copyright__text">
+                <div class="copyright__topline">
+                  <img src="./assets/icons/copyright.png" alt="Copyright ikon">
+                  <p>Skagens Kunstmuseer</p>
+                </div>
+                <p class="cvr">CVR: 12345678</p>
+              </div>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        <div class="footer__column">
+          <h4>Vores museer</h4>
+          <a href="#">Skagens kunstmuseum</a>
+          <a href="#">Anchers hus</a>
+          <a href="#">Drachmanns hus</a>
+        </div>
+        <div class="footer__column">
+          <h4>Besøg</h4>
+          <a href="#">Åbningstider og priser</a>
+          <a href="#">Omvisning</a>
+          <a href="#">Cafe</a>
+          <a href="#">Museumbutikken</a>
+          <a href="#">Undervisning</a>
+        </div>
+        <div class="footer__column">
+          <h4>Kontakt os</h4>
+          <p>Info@skagensmuseum.dk</p>
+          <p>Tel. +45 9844 6444</p>
+          <p>Brøndumsvej 4 DK-9990 Skagen</p>
+
+          <div class="footer__icons">
+            <a href="#"><img src="./assets/icons/facebook-footer.png" alt="Facebook"></a>
+            <a href="#"><img src="./assets/icons/instagram-footer.png" alt="Instagram"></a>
+            <a href="#"><img src="./assets/icons/twitter-footer.png" alt="Twitter"></a>
+            <a href="#"><img src="./assets/icons/pinterest-footer.png" alt="Pinterest"></a>
+          </div>
+
+          <div class="cookies">
+            <p>Cookie Privatlivspolitik</p>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+
+    <script src="./assets/js/nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.heroIntrotekst{
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: Montserrat;
+
+}
+.aegteUng-container{
+       padding: 4% 22%;
+    
+}
+.hero-text{
+    text-align: center;
+   margin: 56px 0;
+   h1{ 
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+   }
+}
+.ung-img{
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.ungImgContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+    
+.aegte-ung_vid{
+    height: 500px;
+    margin-bottom: 56px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.eagteUngintro{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 600;
+    margin-bottom: 40px;
+
+}
+hr.ægteung{
+   
+    background-color: #7098DD;
+    border: none;
+    height: 1px;
+    margin-bottom: 40px;
+}
+.ungContent{
+    margin: 0 16% 40px 16%;
+    h3{
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+}
+.sponser{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.ungFirstContent{
+    margin-bottom: 40px;
+}
+.quote{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.quoteBy{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.ungImgDescription{
+    color: #636363;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+.subImg{
+    margin: 40px 0 40px 0;
+}
+.supportProject{
+
+    h3{
+        text-align: center;
+        
+    }
+    img{
+        padding: 10px 40px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .ungContent{
+        margin: 0 10% 0 10%;
+    }
+    .ungContent h3{
+        margin-top: 40px;
+    }
+    .logo{
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .quote{
+        margin-top: 40px;
+    }
+    .ung-img{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .hero-text h1{
+        font-size: 32px;
+    }
+    .ungContent h3{
+        font-size: 22px;
+    }
+}

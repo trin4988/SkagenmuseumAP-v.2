@@ -1,0 +1,542 @@
+.h1-skagensmalerne{
+    text-align: center;
+    margin: 72px 0px 16px 0px;
+    font-size: 64px;
+}
+
+.intro-text{
+    text-align: center;
+}
+
+.skagensmalerne{
+    margin: 80px 0 124px 0;
+    
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 24px;
+    padding: 8px;
+  }
+  
+  .card {
+    background-color: #FFF4E0;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-decoration: none; 
+    color: inherit; 
+    overflow: hidden;
+  }
+  
+  .card:hover img {
+    transform: scale(1.04);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    padding: 5px;
+    font-weight: bold;
+    color: inherit;
+  }
+  
+  .card:visited,
+  .card:active,
+  .card:hover {
+  text-decoration: none;
+  color: inherit;
+  }
+
+// css til profil.html
+
+#profil-container {
+  max-width: 1400px;
+  margin: auto;
+  margin-left: calc(-10vw);
+  margin-right: calc(-10vw);
+  
+}
+
+.profil-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+.profil-billede {
+  flex: 1.2;
+  max-width: 700px;
+}
+
+.profil-billede img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+
+}
+
+#liv {
+  text-align: end;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+.profil-info {
+  flex: 2;
+}
+
+.profil-info h1 {
+  margin-top: 0;
+  font-size: 2rem;
+ 
+}
+
+.profil-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  
+}
+
+.dato-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-content: end;
+  align-items: center;
+}
+
+.dato-gruppe {
+  text-align: end;
+}
+
+.dato-gruppe p:first-child {
+  font-weight: bold;
+  margin: 0;
+}
+
+.dato-gruppe p:last-child {
+  margin: 0.2rem 0 0 0;
+  font-style: italic;
+  color: #555;
+}
+.profil__divider{
+  width: 70px;
+  height: 1px;
+  background-color: #000000;
+  align-self: center;
+
+}
+
+#navn{
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+// tilbage knap
+.tilbage-knap-profil {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 2rem 0rem 2rem 4rem
+
+}
+
+.tilbage-knap-profil .pil {
+  font-size: 1.2rem;
+}
+
+// tilbagge knap slutter
+
+// Andre værker
+
+#vaerker{
+  font-size: 24px;
+  color: #C48222;
+  white-space: nowrap;
+}
+
+.vaeker-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+  margin: 80px 0px 40px 0px;
+  justify-content: space-between;
+}
+
+.vaerker__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #B3700E;
+}
+
+.pil-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.pil {
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #B3700E; 
+  border-radius: 50%;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  color: #C48222;
+  margin-bottom: 2px;
+}
+
+.pil:hover {
+  background-color: #f3e0c0; 
+}
+
+.værker-container {
+  display: flex;
+  gap: 20px; 
+  margin-top: 2rem;
+  
+}
+
+.værker-container img {
+  width: 300px;     
+  height: auto;
+  border-radius: 6px;  
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.værker-container img:hover {
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.værker-container {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.værker-container img {
+  width: 300px;
+  height: 300px;               
+  border-radius: 6px;
+  object-fit: cover;           
+  object-position: center;     
+  flex-shrink: 0;
+}
+
+#værker1{
+  object-position: top;           
+object-position: center left;   
+object-position: 20% 20%;  
+}
+
+#værker2{
+  object-position: top;         
+object-position: center left;  
+object-position: 20% 20%;  
+}
+
+.dot-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-wrapper::before,
+.slider-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+
+.slider-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+
+
+// relaterede kunstnere
+.relaterede-divider-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 4rem; 
+  margin: 80px 0px 40px 0px;
+  justify-content: space-between;
+
+
+  h2{
+    font-size: 24px;
+    white-space: nowrap;
+    color: #3D62A9;
+  }
+}
+
+.relaterede__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #3D62A9;
+}
+
+// Arrangementer relaterede
+.arra-container{
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.divider-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 4rem; 
+  margin: 80px 0px 40px 0px;
+  justify-content: space-between;
+
+
+  h2{
+    font-size: 24px;
+    white-space: nowrap;
+    color: #4D7D4D;
+  }
+}
+
+.arra__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #4D7D4D;
+}
+
+.arra-card {
+  width: 420px;
+  line-height: 1.5;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+
+}
+
+.arra-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.arra-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.arra-wrapper img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  border-radius: 8px;
+}
+
+
+
+.tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: white;
+  color: #333;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.arra-card .arra-dato {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.arra-card h4 {
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.arra-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.arra-card p,
+.arra-card h4 {
+  word-wrap: break-word;
+}
+
+.arra-pil{
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+  margin-top: auto;
+}
+
+.arra-card:hover{
+  cursor: pointer;
+  transform: scale(1.03); 
+  transition: transform 0.5s ease;
+}
+
+// media query
+@media screen and (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .h1-skagensmalerne{
+    font-size: 32px;
+  }
+
+  .profil-layout {
+    flex-direction: column;
+    margin: 0px 40px 0px 40px;
+  }
+
+  .dato-wrapper {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .dato-gruppe {
+    min-width: 120px; 
+  }
+
+  .profil-info h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .profil-info p {
+    font-size: 1rem;
+  }
+
+  .info-box__divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .arra-container {
+    flex-direction: column;   
+    align-items: center;     
+  }
+
+  .arra-card {
+    width: 90%;              
+    margin-bottom: 40px;      
+  }
+
+  .vaeker-wrapper h2 {
+    text-align: center; 
+  }
+
+  .pil-wrapper {
+    display: none; 
+  }
+
+  .slider-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .værker-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+
+  .værker-container img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .slider-wrapper {
+    scroll-snap-type: x mandatory;
+  }
+  
+  .værker-container img {
+    scroll-snap-align: start;
+  }
+
+  .tilbage-knap-profil{
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .swipe-hint {
+    display: none;
+  }
+
+  .dot-indicators {
+    display: none;
+  }
+
+ 
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

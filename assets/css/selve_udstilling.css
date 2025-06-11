@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+}
+.heroImgUdstilling{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+h1{
+    font-family: Lust;
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+}
+p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.titleSubtext{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+.heroText{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.udstillingContent{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.highlightText{
+    font-weight: 600;
+}
+.udstillingImg{
+    width: 100%;
+    display: block;
+}
+.udstillingKunsteren{
+    color: #636363;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.udstillingImgWrapper{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.goBack{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 40px;
+    gap: 16px;
+    color: white;
+}
+.goBack p{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 32px;
+        white-space: nowrap;
+    }
+    .heroText{
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 700px){
+    h1{
+        font-size: 28px;
+        white-space: nowrap;
+    }
+    .heroText{
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .titleSubtext{
+        font-size: 18px;
+    }
+    .goBack{
+        margin: 24px;
+    }
+    .goBack p{
+        display: none;
+    }
+    .udstillingContent{
+        margin: 8% 10%;
+    }
+        
+
+}

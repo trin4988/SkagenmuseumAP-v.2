@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En oversigt over skagens museers arrangementer">
+    <meta name="keywords" content="Skagen museer, Skagen, Anchers hus, Drachmann hus, arrangement, oversigt, betaling, Gratis">
+    <title>Arrangementer</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <!--Start på navigation-->
+   <div class="wrapper">
+    <header class="main-header">
+        <!--Top menuen start-->
+        <div class="top-box">
+          <div class="top-box-wrapper">
+            <ul class="top-menu">
+              <li><a href="#">Ehverv</a></li>
+              <li><a href="#">Klubben</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Skagen Air</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M0.0800781 0.914062H15.5801V10.4141H0.0800781V0.914062Z" fill="#D22F27"/>
+                <path d="M15.5801 4.91406H6.33008V0.914062H4.83008V4.91406H0.0800781V6.41406H4.83008V10.4141H6.33008V6.41406H15.5801V4.91406Z" fill="white"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      <!--Top menu slutter-->
+      <!--Start på navigationen med dropdown-->
+      <nav class="main-nav mainNav">
+        <div class="nav-container">
+          <a href="index.html">
+          <img class="logo" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens museers logo">
+        </a>
+          <ul class="nav-menu">
+            <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+              <a href="#" class="dropdown-link">Besøg <span class="arrow-down"></span></a>
+              <ul class="dropdown">
+                <li><a href="billet-side.html">Åbningstider og priser</a></li>
+                <li><a href="#">Omvisningg</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Museumbutikken</a></li>
+                <li><a href="planlagning.html">Praktisk information</a></li>
+                <li><a href="#">Skoleudflygt</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Udstillinger <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                  <li><a href="#">Aktuelle Udstillinger</a></li>
+                  <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="skagensmalerne.html">Skagensmalerne</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="arrangementer.html">Arrangementer</a>
+                <ul class="dropdown">
+            
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Om museerne <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Vidste du? <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="#">Vielser</a></li>
+                  <li><a href="#">Støt os</a></li>
+                  <li><a href="#">Cafe</a></li>
+                  <li><a href="#">Fotobestilling</a></li>
+                  <li><a href="#">Låneanmodninger</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="aegte-ung.html">Ægte ung</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+          </ul>
+          <div class="buy-button">
+            <div class="button-wrapper">
+            <a href="#">Køb billet til kunsten</a>
+          </div>
+        </div>
+        </div>
+        </nav>
+        
+      </header>
+    </div>
+     <!--burger på naviagtionen-->
+     <a href="index.html">
+      <img class="logo-mobile" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens logo">
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        &#9776; <!-- burger ikon -->
+      </button>
+      <!--navigation på mobil-->
+      <nav class="mobile-nav" id="mobile-menu" aria-hidden="true">
+        <ul class="top-menu">
+          <li><a href="#">Ehverv</a></li>
+          <li><a href="#">Klubben</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Skagen Air</a></li>
+          <li><a href="#">Top 5</a></li>
+        </ul>
+
+        <ul>
+          <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+            <a href="#">Besøg</a>
+            <ul class="dropdown">
+              <li><a href="billet-side.html">Åbningstider og priser</a></li>
+              <li><a href="#">Omvisningg</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Museumbutikken</a></li>
+              <li><a href="planlagning.html">Praktisk information</a></li>
+              <li><a href="#">Skoleudflygt</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown dropdown-click">
+              <a href="#">Udstillinger</a>
+              <ul class="dropdown">
+                <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                <li><a href="#">Aktuelle Udstillinger</a></li>
+                <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="skagensmalerne.html">Skagensmalerne</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="arrangementer.html">Arrangementer</a>
+              <ul class="dropdown">
+          
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Om museerne</a>
+              <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Vidste du?</a>
+              <ul class="dropdown">
+                <li><a href="#">Vielser</a></li>
+                <li><a href="#">Støt os</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Fotobestilling</a></li>
+                <li><a href="#">Låneanmodninger</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="aegte-ung.html">Ægte ung</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+          <li><a href="#" class="buy-button">Køb billet</a></li>
+        </ul>
+      </nav>
+    <!--Slut på naviagtionen-->
+    <!-- hero -->
+    <div class="arrangementerHero">
+        <img class="heroImg" src="./assets/img/arrangementer/arrangementerHero.webp" alt="">
+        <div class="heroContent">
+            <p>Arrangementer</p>
+            <h1>Arrangementer på museerne</h1>
+        </div>
+    </div>
+    <!-- hero slutter -->
+    <!-- filtrering -->
+     <div class="filterContent">
+        <div class="filterDate date">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <path d="M17.5 2.33594H14.5V0.835937C14.5 0.703329 14.4473 0.576152 14.3536 0.482384C14.2598 0.388616 14.1326 0.335938 14 0.335938C13.8674 0.335938 13.7402 0.388616 13.6464 0.482384C13.5527 0.576152 13.5 0.703329 13.5 0.835937V2.33594H6.5V0.835937C6.5 0.703329 6.44732 0.576152 6.35355 0.482384C6.25979 0.388616 6.13261 0.335938 6 0.335938C5.86739 0.335938 5.74021 0.388616 5.64645 0.482384C5.55268 0.576152 5.5 0.703329 5.5 0.835937V2.33594H2.5C1.8372 2.33673 1.20178 2.60038 0.73311 3.06905C0.264441 3.53772 0.000793929 4.17314 0 4.83594V17.8359C0.000793929 18.4987 0.264441 19.1342 0.73311 19.6028C1.20178 20.0715 1.8372 20.3351 2.5 20.3359H17.5C18.163 20.3359 18.7989 20.0725 19.2678 19.6037C19.7366 19.1349 20 18.499 20 17.8359V4.83594C20 4.1729 19.7366 3.53701 19.2678 3.06817C18.7989 2.59933 18.163 2.33594 17.5 2.33594ZM19 17.8359C19 18.2338 18.842 18.6153 18.5607 18.8966C18.2794 19.1779 17.8978 19.3359 17.5 19.3359H2.5C2.10218 19.3359 1.72064 19.1779 1.43934 18.8966C1.15804 18.6153 1 18.2338 1 17.8359V9.33594H19V17.8359ZM19 8.33594H1V4.83594C1 4.00794 1.67 3.33594 2.5 3.33594H5.5V4.83594C5.5 4.96855 5.55268 5.09572 5.64645 5.18949C5.74021 5.28326 5.86739 5.33594 6 5.33594C6.13261 5.33594 6.25979 5.28326 6.35355 5.18949C6.44732 5.09572 6.5 4.96855 6.5 4.83594V3.33594H13.5V4.83594C13.5 4.96855 13.5527 5.09572 13.6464 5.18949C13.7402 5.28326 13.8674 5.33594 14 5.33594C14.1326 5.33594 14.2598 5.28326 14.3536 5.18949C14.4473 5.09572 14.5 4.96855 14.5 4.83594V3.33594H17.5C17.8978 3.33594 18.2794 3.49397 18.5607 3.77528C18.842 4.05658 19 4.43811 19 4.83594V8.33594Z" fill="#2B2A27"/>
+            </svg>
+            <p>Alle dage</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                <path d="M14.5191 1.07641C14.5202 1.17162 14.5014 1.26602 14.4639 1.35354C14.4264 1.44105 14.371 1.51975 14.3013 1.58458L7.7677 8.11815C7.47731 8.40853 7.02722 8.40853 6.73684 8.11815L0.217786 1.58458C-0.0725953 1.2942 -0.0725953 0.844104 0.217786 0.553723C0.508167 0.263342 0.958257 0.263342 1.24864 0.553723L7.25953 6.57913L13.2849 0.553723C13.5753 0.263341 14.0254 0.263341 14.3158 0.553723C14.461 0.698913 14.5336 0.887661 14.5336 1.06189L14.5191 1.07641Z" fill="black"/>
+            </svg>
+            </div>
+            <div class="filterOption">
+            <div class="filterDate filterLocation">
+                <p>Lokation</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                <path d="M14.5191 1.07641C14.5202 1.17162 14.5014 1.26602 14.4639 1.35354C14.4264 1.44105 14.371 1.51975 14.3013 1.58458L7.7677 8.11815C7.47731 8.40853 7.02722 8.40853 6.73684 8.11815L0.217786 1.58458C-0.0725953 1.2942 -0.0725953 0.844104 0.217786 0.553723C0.508167 0.263342 0.958257 0.263342 1.24864 0.553723L7.25953 6.57913L13.2849 0.553723C13.5753 0.263341 14.0254 0.263341 14.3158 0.553723C14.461 0.698913 14.5336 0.887661 14.5336 1.06189L14.5191 1.07641Z" fill="black"/>
+                </svg>
+            </div> 
+            <div class="filterDate">
+                <p>Pris</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                <path d="M14.5191 1.07641C14.5202 1.17162 14.5014 1.26602 14.4639 1.35354C14.4264 1.44105 14.371 1.51975 14.3013 1.58458L7.7677 8.11815C7.47731 8.40853 7.02722 8.40853 6.73684 8.11815L0.217786 1.58458C-0.0725953 1.2942 -0.0725953 0.844104 0.217786 0.553723C0.508167 0.263342 0.958257 0.263342 1.24864 0.553723L7.25953 6.57913L13.2849 0.553723C13.5753 0.263341 14.0254 0.263341 14.3158 0.553723C14.461 0.698913 14.5336 0.887661 14.5336 1.06189L14.5191 1.07641Z" fill="black"/>
+                </svg>
+            </div> 
+         </div>  
+    </div>
+    <!-- filtering slutter (ikke funktionel endnu) -->
+    <!-- arrangementer -->
+     <main>
+        <section class="eventMaj">
+            <p class="eventDate">MAJ 2025</p>
+            <!-- Første arrangement -->
+            <a href="selve-arrangementer.html">
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>28 maj, 4 jun, 11 jun og flere</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/iAnchersSpor.webp" alt="Et arrangement der foregår foran Anchers hus i solskinsdag">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">28 maj, 4 jun, 11 jun og flere</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Anchers hus</p>
+                            <p class="tags price">Gratis</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">I Anchers fodspor</h4>
+                                <p>Gå i fodsporene på Anna, Michael og Helga Ancher.  Familien var et fast anker i kunstnerkolonien. Deres hjem og Anna Anchers fødested, Brøndums Hotel, skabte rammerne om utallige møder, fester og kunstneriske fællesskaber.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+        </a>
+            <!-- anden arrangement -->
+            <a href="selve-arrangementer.html">
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>29 maj, 30 maj, 31 maj og flere</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/fotoredigering.webp" alt="Et arrangement der foregår foran Anchers hus i solskinsdag">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">29 maj, 30 maj, 31 maj og flere</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Skagens museum</p>
+                            <p class="tags price">Gratis</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">Åbent værksted: Fotoredigering a la 1800</h4>
+                                <p>Kom til åbent værksted og prøv kræfter med billedredigering som i 1800-tallet! Vidste du, at man også dengang justerede og redigerede fotografier – bare med helt andre metoder?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+        </a>
+            <!-- trejde arrangement -->
+            <a href="selve-arrangementer.html"></a>
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>29 maj, 5 jun, 12 jun og flere</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/iDrachmannsHus.webp" alt="gammel foto hvor to mænd står og stirer på et billede">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">29 maj, 5 jun, 12 jun og flere</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Drachmanns hus</p>
+                            <p class="tags price">Gratis</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">I Drachmanns hus</h4>
+                                <p>Gå i fodsporene på digteren, marinemaleren og bohemen Holger Drachmann. Den produktive og livlige kunstner forelskede sig i Skagen og slog sig ned i byen de sidste år af sit liv.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+        </a>
+            
+            <!-- fjerde arrangement -->
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>30 maj, 6 jun, 13 jun og flere</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/herErSkagensmalerne.webp" alt="Skagensmalere sidder til et møde i et lokalt i sort og hvidt">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">30 maj, 6 jun, 13 jun og flere</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Skagens museum</p>
+                            <p class="tags price">Gratis</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">Her er skagenmalerne</h4>
+                                <p>Hvem var skagensmalerne? Hvorfor endte så mange kunstnere i netop Skagen og hvordan opstod Skagens Museum?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+        </section>
+        <section class="eventJun">
+            <p class="eventDate">JUN 2025</p>
+            <!-- Første arrangement -->
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>3 jun.</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/aftenakademiet.webp" alt="maleriet Københavns Børs af P.S.Krøyer">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">3 jun.</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Anchers hus</p>
+                            <p class="tags betaling">Betaling</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">Aftenakademiet 2.0: Skål for Fra Københavns Børs!</h4>
+                                <p>Skagens Museum skåler for P.S. Krøyers “Fra Københavns Børs”, som siden juni 2024 har prydet museumssalene.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+            <!-- anden arrangement -->
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>21 jun</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/portfolioreview.webp" alt="En lyshåret kvinde i hvid påklædning">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">21 jun.</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Skagens museum</p>
+                            <p class="tags betaling">Betaling</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">Portfolioreview for fotografer med Joséphine Douet</h4>
+                                <p>Få et blik på dine fotos fra en af de rigtig gode. Joséphine Douet er kunstfotograf, kreativ konsulent og kurator.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+            <!-- trejde arrangement -->
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>23 jun</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/sanktHans.webp" alt="Malteriet Sankt Hans på Skagen strand af P.S.Krøyer">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">23 jun.</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Drachmanns hus</p>
+                            <p class="tags betaling">Betaling</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">Sankt Hans på Skagens museum</h4>
+                                <p>Oplev Sankt Hans på Skagens Museum og kig ind i flammerne og fællesskabet i P.S. Krøyers ikoniske Sankt Hansblus på Skagen strand.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+            <!-- fjerde arrangement -->
+            <section class="eventContent">
+                <div class="eventDateDetail">
+                    <p>30 jun</p>
+                </div>
+                <img class="eventImg" src="./assets/img/arrangementer/sommerSkolen.webp" alt="To små piger sidder og tegner i en have">
+                <div class="eventWrapper">
+                    <div class="eventTagsLine">
+                        <p class="eventDateDetailInfo">30 jun.</p>
+                        <div class="tagsContent">
+                            <p class="tags location">Skagens museum</p>
+                            <p class="tags betaling">Betaling</p>
+                            <hr>
+                        </div>
+                        <div class="eventInfo">
+                            <div>
+                                <h4 class="eventTitle">Sommerskolen på Skagens Museum: 6-10 år</h4>
+                                <p>På Sommerskolen skal vi tegne, male, forme og skabe midt i vores særlige historiske rammer. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mainBtn">
+                        Mere om arrangementet
+                    </button>
+                </div>
+            </section>
+        </section>
+        <button class="mainBtn showMoreBtn">
+            Vis flere arrangementer<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="10"
+              viewBox="0 0 16 10"
+              fill="none"
+            >
+              <path
+                d="M7.99201 9.49469C7.88719 9.49597 7.78327 9.4753 7.68692 9.43401C7.59057 9.39272 7.50393 9.33172 7.43257 9.25493L0.23976 2.06213C-0.0799201 1.74245 -0.0799201 1.24694 0.23976 0.92726C0.559441 0.60758 1.05494 0.60758 1.37463 0.92726L8.00799 7.56063L14.6254 0.943244C14.9451 0.623564 15.4406 0.623564 15.7602 0.943244C16.0799 1.26292 16.0799 1.75843 15.7602 2.07811L8.56743 9.27092C8.40759 9.43076 8.1998 9.51068 8.00799 9.51068L7.99201 9.49469Z"
+                fill="#0B0B0B"
+              />
+            </svg>
+          </button>
+     </main>
+
+     <footer class="footer">
+        <div class="footer__logo">
+          <img src="./assets/img/skagenskunstmusum-footer.png" alt="Skagens logo">
+        </div>
+      
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h4>Genvej</h4>
+            <a href="#">English</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Medarbejder</a>
+            <a href="#">Ledigestillinger</a>
+            <div class="footer__column">
+         
+            
+              <div class="copyright">
+                <div class="copyright__text">
+                  <div class="copyright__topline">
+                    <img src="./assets/icons/copyright.png" alt="Copyright ikon">
+                    <p>Skagens Kunstmuseer</p>
+                  </div>
+                  <p class="cvr">CVR: 12345678</p>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+          </div>
+          <div class="footer__column">
+            <h4>Vores museer</h4>
+            <a href="#">Skagens kunstmuseum</a>
+            <a href="#">Anchers hus</a>
+            <a href="#">Drachmanns hus</a>
+          </div>
+          <div class="footer__column">
+            <h4>Besøg</h4>
+            <a href="#">Åbningstider og priser</a>
+            <a href="#">Omvisning</a>
+            <a href="#">Cafe</a>
+            <a href="#">Museumbutikken</a>
+            <a href="#">Undervisning</a>
+          </div>
+          <div class="footer__column">
+            <h4>Kontakt os</h4>
+            <p>Info@skagensmuseum.dk</p>
+            <p>Tel. +45 9844 6444</p>
+            <p>Brøndumsvej 4 DK-9990 Skagen</p>
+  
+            <div class="footer__icons">
+              <a href="#"><img src="./assets/icons/facebook-footer.png" alt="Facebook"></a>
+              <a href="#"><img src="./assets/icons/instagram-footer.png" alt="Instagram"></a>
+              <a href="#"><img src="./assets/icons/twitter-footer.png" alt="Twitter"></a>
+              <a href="#"><img src="./assets/icons/pinterest-footer.png" alt="Pinterest"></a>
+            </div>
+  
+            <div class="cookies">
+              <p>Cookie Privatlivspolitik</p>
+            </div>
+          </div>
+         
+        </div>
+      </footer>
+       
+    <script src="./assets/js/nav.js"></script>
+
+</body>
+</html>

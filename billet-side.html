@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Oversigt over Åbningstider og billetter.">
+    <meta name="keywords" content="Skagens kunstmuseum, Skagen, Billetter, Åbningstider, Køb, Skagens museum, Anchers hus, Drachmanns hus">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <title>Åbningstider & billetter</title>
+</head>
+<body>
+    <!--Start på navigation-->
+   <div class="wrapper">
+    <header class="main-header">
+        <!--Top menuen start-->
+        <div class="top-box">
+          <div class="top-box-wrapper">
+            <ul class="top-menu">
+              <li><a href="#">Ehverv</a></li>
+              <li><a href="#">Klubben</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Skagen Air</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M0.0800781 0.914062H15.5801V10.4141H0.0800781V0.914062Z" fill="#D22F27"/>
+                <path d="M15.5801 4.91406H6.33008V0.914062H4.83008V4.91406H0.0800781V6.41406H4.83008V10.4141H6.33008V6.41406H15.5801V4.91406Z" fill="white"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      <!--Top menu slutter-->
+      <!--Start på navigationen med dropdown-->
+      <nav class="main-nav mainNav">
+        <div class="nav-container">
+          <a href="index.html">
+          <img class="logo" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens museers logo">
+        </a>
+          <ul class="nav-menu">
+            <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+              <a href="#" class="dropdown-link">Besøg <span class="arrow-down"></span></a>
+              <ul class="dropdown">
+                <li><a href="billet-side.html">Åbningstider og priser</a></li>
+                <li><a href="#">Omvisningg</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Museumbutikken</a></li>
+                <li><a href="planlagning.html">Praktisk information</a></li>
+                <li><a href="#">Skoleudflygt</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Udstillinger <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                  <li><a href="#">Aktuelle Udstillinger</a></li>
+                  <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="skagensmalerne.html">Skagensmalerne</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="arrangementer.html">Arrangementer</a>
+                <ul class="dropdown">
+            
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Om museerne <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Vidste du? <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="#">Vielser</a></li>
+                  <li><a href="#">Støt os</a></li>
+                  <li><a href="#">Cafe</a></li>
+                  <li><a href="#">Fotobestilling</a></li>
+                  <li><a href="#">Låneanmodninger</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="aegte-ung.html">Ægte ung</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+          </ul>
+          <div class="buy-button">
+            <div class="button-wrapper">
+            <a href="#">Køb billet til kunsten</a>
+          </div>
+        </div>
+        </div>
+        </nav>
+        
+      </header>
+    </div>
+     <!--burger på naviagtionen-->
+     <a href="index.html">
+      <img class="logo-mobile" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens logo">
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        &#9776; <!-- burger ikon -->
+      </button>
+      <!--navigation på mobil-->
+      <nav class="mobile-nav" id="mobile-menu" aria-hidden="true">
+        <ul class="top-menu">
+          <li><a href="#">Ehverv</a></li>
+          <li><a href="#">Klubben</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Skagen Air</a></li>
+          <li><a href="#">Top 5</a></li>
+        </ul>
+
+        <ul>
+          <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+            <a href="#">Besøg</a>
+            <ul class="dropdown">
+              <li><a href="billet-side.html">Åbningstider og priser</a></li>
+              <li><a href="#">Omvisningg</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Museumbutikken</a></li>
+              <li><a href="planlagning.html">Praktisk information</a></li>
+              <li><a href="#">Skoleudflygt</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown dropdown-click">
+              <a href="#">Udstillinger</a>
+              <ul class="dropdown">
+                <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                <li><a href="#">Aktuelle Udstillinger</a></li>
+                <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="skagensmalerne.html">Skagensmalerne</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="arrangementer.html">Arrangementer</a>
+              <ul class="dropdown">
+          
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Om museerne</a>
+              <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Vidste du?</a>
+              <ul class="dropdown">
+                <li><a href="#">Vielser</a></li>
+                <li><a href="#">Støt os</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Fotobestilling</a></li>
+                <li><a href="#">Låneanmodninger</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="aegte-ung.html">Ægte ung</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+          <li><a href="#" class="buy-button">Køb billet</a></li>
+        </ul>
+      </nav>
+    <!--Slut på naviagtionen-->
+
+
+        <main>
+            <section class="billet-hero">
+                <a href="index.html" class="tilbage-knap-museer">
+                    <span class="pil-tilbage-museer">&#8592;</span> Gå tilbage
+                  </a>
+                  <div class="billet-hero-text">
+                    <p>Åbningstider og priser</p>
+                  <h1>Find den rette dag og billet</h1>
+                  
+                </div>
+                </section>
+
+                <div class="divider-wrapper-historie">
+                    <h2>ÅBNINGSTIDER</h2>
+                    <div class="huset_historie__divider"></div>
+                  </div>
+
+                  <section>
+                   
+                    <div class="tabs-billet">
+                      <div class="tab-billet active" data-tab="skagen"> <!--Data-tab er en attribute, som bliver brugt i Javascript til at finde det objekt med navnet "skagen"-->
+                        <div class="tab-billet-header">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                            <path d="M30.1849 0.265625H25.5182C25.3848 0.265625 25.2515 0.298936 25.1516 0.365669L12.6516 8.93234H1.51823C1.15159 8.93234 0.851562 9.23236 0.851562 9.599V28.9323C0.851562 29.299 1.15159 29.599 1.51823 29.599H24.1849C24.5515 29.599 24.8516 29.299 24.8516 28.9323V15.599H26.8516V28.9323C26.8516 29.299 27.1516 29.599 27.5182 29.599C27.8849 29.599 28.1849 29.299 28.1849 28.9323V15.599H30.1849C30.5515 15.599 30.8516 15.299 30.8516 14.9323V0.932336C30.8516 0.565697 30.5515 0.265625 30.1849 0.265625ZM2.18487 15.599H4.18487V28.2656H2.18487V15.599ZM20.1849 15.599V17.599H5.5182V15.599H20.1849ZM5.5182 18.9323H12.1849V28.2656H5.5182V18.9323ZM13.5182 18.9323H20.1849V28.2656H13.5182V18.9323ZM23.5182 28.2656H21.5182V15.599H23.5182V28.2656ZM24.1849 14.2656H2.18487V10.2656H12.8515C12.9849 10.2656 13.1182 10.2323 13.2182 10.1656L25.7182 1.59891H29.5182V6.26558C29.5182 6.26558 29.5182 6.47343 29.5182 6.84007C29.5182 7.20671 29.5182 7.59891 29.5182 7.59891V8.93225V9.59489V10.2656V11.5989V12.2808V12.9322V14.2656L24.1849 14.2656Z" fill="black"/>
+                          </svg>
+                          <div class="tab-billet-texts">
+                            <h4 class="tab-billet-overskrift">Skagens kunstmuseum</h4>
+                           
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-billet" data-tab="ancher">
+                        <div class="tab-billet-header">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                            <path d="M30.8516 9.59896V24.8714C30.8516 25.238 30.5515 25.5381 30.1849 25.5381H1.51823C1.15159 25.5381 0.851562 25.238 0.851562 24.8714V9.59896V9.56565V9.53234C0.851562 9.49903 0.851562 9.4323 0.884874 9.39899V9.36568C0.918185 9.29905 0.918185 9.26563 0.951496 9.23232L5.18483 3.39899V0.932292C5.18483 0.565653 5.48486 0.265625 5.8515 0.265625C6.21813 0.265625 6.51816 0.565653 6.51816 0.932292V2.93229H8.51816V0.932292C8.51816 0.565653 8.81819 0.265625 9.18483 0.265625C9.55147 0.265625 9.8515 0.565653 9.8515 0.932292V2.93229H21.8515V0.932292C21.8515 0.565653 22.1515 0.265625 22.5182 0.265625C22.8848 0.265625 23.1848 0.565653 23.1848 0.932292V2.93229H25.1848V0.932292C25.1848 0.565653 25.4849 0.265625 25.8515 0.265625C26.2181 0.265625 26.5182 0.565653 26.5182 0.932292V3.39899L30.7182 9.23232C30.7515 9.26563 30.7848 9.33237 30.7848 9.36568V9.39899C30.7848 9.4323 30.8181 9.46561 30.8181 9.53234C30.8515 9.53234 30.8516 9.56565 30.8516 9.59896ZM5.51823 12.2048V14.2048H7.51823V12.2048H5.51823ZM8.85156 12.2048V14.2048H10.8516V12.2048H8.85156ZM12.1849 12.2048V14.2048H14.1849V12.2048H12.1849ZM10.8516 15.5381H8.85156V17.5381H10.8516V15.5381ZM7.51823 15.5381H5.51823V17.5381H7.51823V15.5381ZM12.1849 17.5381H14.1849V15.5381H12.1849V17.5381ZM5.51823 24.2048H14.1849V18.8715H5.51823V24.2048ZM15.5182 24.2048H17.5182V12.2048H15.5182V24.2048ZM18.8516 24.2048H26.1849V12.2048H18.8516V24.2048ZM29.5182 10.8715V10.2656H2.1849V10.8715H29.5182ZM2.81823 8.9323H28.8849L25.5182 4.26563H6.1849L2.81823 8.9323ZM2.18487 24.2048H4.18487V12.2048H2.18487V24.2048ZM29.5182 12.2048H27.5182V24.2048H29.5182V12.2048Z" fill="black"/>
+                          </svg>
+                          <div class="tab-billet-texts">
+                            <h4 class="tab-billet-overskrift">Anchers hus</h4>
+                           
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-billet" data-tab="drachmann">
+                        <div class="tab-billet-header">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="33" viewBox="0 0 29 33" fill="none">
+                            <path d="M28.0516 13.3545V31.4879H0.851562V13.3545L14.4516 1.26562L28.0516 13.3545Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M0.851562 16.3759H28.0516M6.14045 8.82031V31.487M22.7627 8.82031V31.487" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.4316 22.4199H17.4761V31.4866H11.4316V22.4199Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <div class="tab-billet-texts">
+                            <h4 class="tab-billet-overskrift">Drachmanns hus</h4>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="billet-container">
+                      <div class="billet-wrapper" id="tab-billet-content">
+                        <!-- Indhold skifter dynamisk her -->
+                      </div>
+                    </div>
+                  
+                  </section>
+        </main>
+
+
+        <footer class="footer">
+          <div class="footer__logo">
+            <img src="./assets/img/skagenskunstmusum-footer.png" alt="Skagens logo">
+          </div>
+        
+          <div class="footer__columns">
+            <div class="footer__column">
+              <h4>Genvej</h4>
+              <a href="#">English</a>
+              <a href="#">Deutsch</a>
+              <a href="#">Medarbejder</a>
+              <a href="#">Ledigestillinger</a>
+              <div class="footer__column">
+           
+              
+                <div class="copyright">
+                  <div class="copyright__text">
+                    <div class="copyright__topline">
+                      <img src="./assets/icons/copyright.png" alt="Copyright ikon">
+                      <p>Skagens Kunstmuseer</p>
+                    </div>
+                    <p class="cvr">CVR: 12345678</p>
+                  </div>
+                </div>
+                
+                
+              </div>
+              
+            </div>
+            <div class="footer__column">
+              <h4>Vores museer</h4>
+              <a href="#">Skagens kunstmuseum</a>
+              <a href="#">Anchers hus</a>
+              <a href="#">Drachmanns hus</a>
+            </div>
+            <div class="footer__column">
+              <h4>Besøg</h4>
+              <a href="#">Åbningstider og priser</a>
+              <a href="#">Omvisning</a>
+              <a href="#">Cafe</a>
+              <a href="#">Museumbutikken</a>
+              <a href="#">Undervisning</a>
+            </div>
+            <div class="footer__column">
+              <h4>Kontakt os</h4>
+              <p>Info@skagensmuseum.dk</p>
+              <p>Tel. +45 9844 6444</p>
+              <p>Brøndumsvej 4 DK-9990 Skagen</p>
+    
+              <div class="footer__icons">
+                <a href="#"><img src="./assets/icons/facebook-footer.png" alt="Facebook"></a>
+                <a href="#"><img src="./assets/icons/instagram-footer.png" alt="Instagram"></a>
+                <a href="#"><img src="./assets/icons/twitter-footer.png" alt="Twitter"></a>
+                <a href="#"><img src="./assets/icons/pinterest-footer.png" alt="Pinterest"></a>
+              </div>
+    
+              <div class="cookies">
+                <p>Cookie Privatlivspolitik</p>
+              </div>
+            </div>
+           
+          </div>
+        </footer>
+          <script src="./assets/js/nav.js"></script>
+          <script src="./assets/js/tabs2.js"></script>
+</body>
+</html>

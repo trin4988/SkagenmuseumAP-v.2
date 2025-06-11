@@ -1,0 +1,206 @@
+.footer {
+  background: radial-gradient(46.76% 24.38% at 5.02% 89.88%, rgba(184, 215, 251, 0.40) 37.41%, rgba(184, 215, 251, 0.00) 100%), radial-gradient(41.46% 36.27% at 26.32% 55.32%, #FFF 0%, #FFF 24.34%, rgba(255, 255, 255, 0.60) 56.21%, rgba(255, 255, 255, 0.80) 81.02%, rgba(255, 255, 255, 0.40) 100%), radial-gradient(41.4% 40.8% at 89.1% -8.84%, rgba(184, 215, 251, 0.80) 0%, rgba(184, 215, 251, 0.00) 100%), radial-gradient(46.77% 25.89% at 90.56% 63.66%, #FFF 0%, #FFF 24.34%, rgba(255, 255, 255, 0.60) 56.21%, #FFF 81.02%, rgba(255, 255, 255, 0.40) 100%), radial-gradient(42.15% 64.32% at 9.67% 25.74%, rgba(255, 193, 64, 0.50) 38.48%, rgba(254, 223, 158, 0.00) 100%), radial-gradient(42.28% 33.01% at 84.43% 92.99%, #FFCA5A 0%, rgba(254, 215, 132, 0.60) 56.49%, rgba(254, 223, 158, 0.00) 100%), #FFF;
+    padding: 3rem 1rem;
+    text-align: center;
+  
+    &__logo {
+      margin-bottom: 4rem;
+  
+      img {
+        max-width: 250px;
+      }
+    }
+  
+    &__columns {
+      display: flex; 
+      justify-content: center;
+      gap: 10rem;
+      flex-wrap: wrap; 
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+    &__column {
+      text-align: left;
+  
+      h4 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        color: #333;
+        text-align: left;
+      }
+  
+      a {
+        display: block;
+        margin: 0.8rem 0;
+        color: #666;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: color 0.2s ease;
+  
+        &:hover {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .footer_logo{
+    margin-bottom: 64px;
+  }
+
+  .footer__icons {
+    display: flex;
+    gap: 1rem;
+  
+    a {
+      color: #666;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 8rem;
+  
+    &__text {
+      display: flex;
+      flex-direction: column;
+  
+      .copyright__topline {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+  
+        img {
+          width: 20px;
+          height: auto;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 18px;
+          color: #666;
+        }
+      }
+  
+      .cvr {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        color: #999;
+      }
+    }
+  }
+  
+  .cookies{
+    margin-top: 5rem;
+  }
+
+
+  @media (max-width: 768px) {
+    .footer {
+      text-align: center;
+    }
+
+    .footer h4{
+      text-align: center;
+    }
+  
+    .footer__columns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  
+    .footer__column {
+      text-align: center;
+      width: 100%;
+      max-width: 100px;
+    }
+  
+    .footer__logo {
+      margin-bottom: 2rem;
+    }
+  
+    .footer__icons {
+      justify-content: center;
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .footer__icons img {
+      display: inline-block;
+    }
+  
+    .copyright {
+      margin-top: 3rem;
+    }
+  
+    .copyright__text,
+    .cookies {
+      text-align: center;
+    }
+  
+    .cookies {
+      margin-top: 2rem;
+    }
+
+    .copyright__topline{
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer__columns {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      position: relative;
+      padding-bottom: 8rem; 
+    }
+  
+    .footer__column {
+      text-align: center;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .footer__column:last-child {
+      margin-bottom: 8rem;
+    }
+
+    
+  
+    .copyright {
+      position: absolute;
+      bottom: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 300px;
+      bottom: 6.5rem; 
+    }
+  
+    .cookies {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 300px;
+      bottom: 3.5rem; 
+      text-align: center;
+    }
+  }
+  
+  

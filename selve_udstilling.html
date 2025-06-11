@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information over selve udstillinger, til at få et indblik">
+    <meta name="keywords" content="Skagens museum, udstilling, information">
+    <title>Udstilling - Romantiserede Rebeller</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--Start på navigation-->
+   <div class="wrapper">
+    <header class="main-header">
+        <!--Top menuen start-->
+        <div class="top-box">
+          <div class="top-box-wrapper">
+            <ul class="top-menu">
+              <li><a href="#">Ehverv</a></li>
+              <li><a href="#">Klubben</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Skagen Air</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M0.0800781 0.914062H15.5801V10.4141H0.0800781V0.914062Z" fill="#D22F27"/>
+                <path d="M15.5801 4.91406H6.33008V0.914062H4.83008V4.91406H0.0800781V6.41406H4.83008V10.4141H6.33008V6.41406H15.5801V4.91406Z" fill="white"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      <!--Top menu slutter-->
+      <!--Start på navigationen med dropdown-->
+      <nav class="main-nav mainNav">
+        <div class="nav-container">
+          <a href="index.html">
+          <img class="logo" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens museers logo">
+        </a>
+          <ul class="nav-menu">
+            <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+              <a href="#" class="dropdown-link">Besøg <span class="arrow-down"></span></a>
+              <ul class="dropdown">
+                <li><a href="billet-side.html">Åbningstider og priser</a></li>
+                <li><a href="#">Omvisningg</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Museumbutikken</a></li>
+                <li><a href="planlagning.html">Praktisk information</a></li>
+                <li><a href="#">Skoleudflygt</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Udstillinger <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                  <li><a href="#">Aktuelle Udstillinger</a></li>
+                  <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="skagensmalerne.html">Skagensmalerne</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="arrangementer.html">Arrangementer</a>
+                <ul class="dropdown">
+            
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Om museerne <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Vidste du? <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="#">Vielser</a></li>
+                  <li><a href="#">Støt os</a></li>
+                  <li><a href="#">Cafe</a></li>
+                  <li><a href="#">Fotobestilling</a></li>
+                  <li><a href="#">Låneanmodninger</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="aegte-ung.html">Ægte ung</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+          </ul>
+          <div class="buy-button">
+            <div class="button-wrapper">
+            <a href="#">Køb billet til kunsten</a>
+          </div>
+        </div>
+        </div>
+        </nav>
+        
+      </header>
+    </div>
+     <!--burger på naviagtionen-->
+     <a href="index.html">
+      <img class="logo-mobile" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens logo">
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        &#9776; <!-- burger ikon -->
+      </button>
+      <!--navigation på mobil-->
+      <nav class="mobile-nav" id="mobile-menu" aria-hidden="true">
+        <ul class="top-menu">
+          <li><a href="#">Ehverv</a></li>
+          <li><a href="#">Klubben</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Skagen Air</a></li>
+          <li><a href="#">Top 5</a></li>
+        </ul>
+
+        <ul>
+          <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+            <a href="#">Besøg</a>
+            <ul class="dropdown">
+              <li><a href="billet-side.html">Åbningstider og priser</a></li>
+              <li><a href="#">Omvisningg</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Museumbutikken</a></li>
+              <li><a href="planlagning.html">Praktisk information</a></li>
+              <li><a href="#">Skoleudflygt</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown dropdown-click">
+              <a href="#">Udstillinger</a>
+              <ul class="dropdown">
+                <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                <li><a href="#">Aktuelle Udstillinger</a></li>
+                <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="skagensmalerne.html">Skagensmalerne</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="arrangementer.html">Arrangementer</a>
+              <ul class="dropdown">
+          
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Om museerne</a>
+              <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Vidste du?</a>
+              <ul class="dropdown">
+                <li><a href="#">Vielser</a></li>
+                <li><a href="#">Støt os</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Fotobestilling</a></li>
+                <li><a href="#">Låneanmodninger</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="aegte-ung.html">Ægte ung</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+          <li><a href="#" class="buy-button">Køb billet</a></li>
+        </ul>
+      </nav>
+    <!--Slut på naviagtionen-->
+   
+
+    <section class="selve-udstilling-hero">
+      <a href="index.html" class="tilbage-knap-udstilling">
+          <span class="pil-tilbage-udstilling">&#8592;</span> Gå tilbage
+        </a>
+        <div class="selve-udstilling-hero-text">
+          <h1>Romantiserede</h1>
+          <p>Ny samlingophængning på Skagens museum</p>
+        
+      </div>
+      </section>
+    <main>
+        <p class="udstillingContent highlightText">Skagensmalernes værker opfattes ofte som smukke, behagelige, og måske en lille smule konservative. Men det er kun den halve sandhed: De er romantiserede i vores tid, men på deres egen tid var de definerende for kunstens udvikling i Nordeuropa.</p>
+        <hr>
+        <p class="udstillingContent">Romantiserede Rebeller udfolder historien om skagensmalerne igennem 19 forskellige rum med temaer som bl.a. Fællesskab, Store og små bevægelser, Bybilleder, Haveselskaber, Strandkanten, og Ufærdigt arbejde. Vi præsenterer kunstværkerne i selskab med nye fortællinger, nye omsluttende oplevelser, leg med lys og skygge.</p>
+        <div class="udstillingImgWrapper">
+            <img class="udstillingImg" src="./assets/img/selve_udstilling/VedVeaven.jpg" alt="Maleriet Ved væven af Marie Krøyer">
+            <p class="udstillingKunsteren">Ved væven af Marie Krøyer</p>
+        </div>
+        <p class="udstillingContent">Oplev et kunstnerfællesskab, der formåede at leve i kontraster. De malede solbeskinnede strand og druknede fiskere, de levede som bohemer midt i en arbejdsom og dybt religiøs fiskerby, de rejste rundt i Europa og kom tilbage til Skagen for at male – og de fandt hver især deres egen kunstneriske vej i et dynamisk fællesskab.</p>
+        <div class="udstillingImgWrapper">
+            <img class="udstillingImg" src="./assets/img/selve_udstilling/koekkeninterioer.webp" alt="Maleriet Køkkeninteriør af Viggo Johansen ">
+            <p class="udstillingKunsteren">Køkkeninteriør af Viggo Johansen</p>
+        </div>
+        <p class="udstillingContent">Vi åbner rummene ét efter ét i løbet af 2025. Følg med her for yderligere informationer.</p>
+
+        <section>
+          <div class="vaeker-wrapper">
+              <h2>RELATEREDE VÆRKER</h2>
+            
+              <div class="vaerker__divider"></div>
+  
+            
+            
+              <div class="pil-wrapper">
+                <span class="pil pil-left">&#8592;</span>
+                <span class="pil pil-right">&#8594;</span>
+              </div>
+            </div>
+            
+            <div class="slider-wrapper">
+              <div class="værker-container">
+                <a href="">
+                <img id="værker1" src="" alt="Værk af P.S. Krøyer med titlen Sommeraften ved Skagen">
+              </a>
+              <a href="enkelt-vaerk.html">
+                <img id="værker2" src="" alt="Værk af P.S. Krøyer med titlen Sommeraften på Skagen Sønderstrand">
+              </a>
+              <a href="enkelt-vaerk.html">
+                <img id="værker3" src="" alt="Værk af P.S. Krøyer med titlen Roser">
+              </a>
+              <a href="enkelt-vaerk.html">
+                <img id="værker4" src="" alt="Værk af P.S. Krøyer med titlen Holger Drachmann">
+              </a>
+              <a href="enkelt-vaerk.html">
+                <img id="værker5" src="" alt="Værk af P.S. Krøyer med titlen ved frokost">
+              </a>
+              <a href="enkelt-vaerk.html">
+                <img id="værker6" src="" alt="Værk af P.S. Krøyer med titlen Ved frokost">
+              </a>
+              </div>
+            </div>
+            <div class="dot-indicators">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              
+            </div>
+          </section>
+
+          <section>
+            <div class="relaterede-divider-wrapper">
+              <h2>RELATEREDE KUNSTNERE</h2>
+              <div class="relaterede__divider"></div>
+            </div>
+            
+              <div class="card-grid2">
+                  <a class="card2" href="profil.html?id=maler1">
+                    <img src="./assets/img/marie.webp" alt="Maler 1">
+                    <p id="kunstnere-navn">Marie Krøyer</p>
+                    <p id="kunstnere-year">Født 1867 - død 1940</p>
+                  </a>
+                  <a class="card2" href="profil.html?id=maler1">
+                      <img id="kunstnerePB1" src="./assets/img/michael.webp" alt="Maler 2">
+                      <p id="kunstnere-navn1">Michael Ancher</p>
+                      <p id="kunstnere-year1">Født 1849 - død 1927</p>
+                    </a>
+                    <a class="card2" href="profil.html?id=maler1">
+                      <img id="kunstnerePB2" src="./assets/img/viggo.webp" alt="Maler 3">
+                      <p id="kunstnere-navn2">Viggo Johannsen</p>
+                      <p id="kunstnere-year2">Født 1851 - død 1935</p>
+                    </a>
+                    <a class="card2" href="profil.html?id=maler1">
+                      <img id="kunstnerePB3" src="./assets/img/anna.webp" alt="Maler 4">
+                      <p id="kunstnere-navn3">Anna Ancher</p>
+                      <p id="kunstnere-year3">Født 1859 - død 1935</p>
+                    </a>
+            </div>
+          </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./assets/img/skagenskunstmusum-footer.png" alt="Skagens logo">
+      </div>
+    
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h4>Genvej</h4>
+          <a href="#">English</a>
+          <a href="#">Deutsch</a>
+          <a href="#">Medarbejder</a>
+          <a href="#">Ledigestillinger</a>
+          <div class="footer__column">
+       
+          
+            <div class="copyright">
+              <div class="copyright__text">
+                <div class="copyright__topline">
+                  <img src="./assets/icons/copyright.png" alt="Copyright ikon">
+                  <p>Skagens Kunstmuseer</p>
+                </div>
+                <p class="cvr">CVR: 12345678</p>
+              </div>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        <div class="footer__column">
+          <h4>Vores museer</h4>
+          <a href="#">Skagens kunstmuseum</a>
+          <a href="#">Anchers hus</a>
+          <a href="#">Drachmanns hus</a>
+        </div>
+        <div class="footer__column">
+          <h4>Besøg</h4>
+          <a href="#">Åbningstider og priser</a>
+          <a href="#">Omvisning</a>
+          <a href="#">Cafe</a>
+          <a href="#">Museumbutikken</a>
+          <a href="#">Undervisning</a>
+        </div>
+        <div class="footer__column">
+          <h4>Kontakt os</h4>
+          <p>Info@skagensmuseum.dk</p>
+          <p>Tel. +45 9844 6444</p>
+          <p>Brøndumsvej 4 DK-9990 Skagen</p>
+
+          <div class="footer__icons">
+            <a href="#"><img src="./assets/icons/facebook-footer.png" alt="Facebook"></a>
+            <a href="#"><img src="./assets/icons/instagram-footer.png" alt="Instagram"></a>
+            <a href="#"><img src="./assets/icons/twitter-footer.png" alt="Twitter"></a>
+            <a href="#"><img src="./assets/icons/pinterest-footer.png" alt="Pinterest"></a>
+          </div>
+
+          <div class="cookies">
+            <p>Cookie Privatlivspolitik</p>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/vaerker-slider.js"></script>
+</body>
+</html>

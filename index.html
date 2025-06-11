@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Besøg Skagens Kunstmuseum og oplev en enestående samling af dansk kunst fra Skagensmalerne og moderne kunstnere.">
+    <meta name="keywords" content="Skagens kunstmuseum, Skagensmalerne, dansk kunst, kunstudstilling, kunstmuseum, kunstværker, konkurrence, gallery">
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+  
+
+
+   <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Skagens kunstmuseum</title>
+</head>
+<body>
+   <!--Start på navigation-->
+   <div class="wrapper">
+    <header class="main-header">
+        <!--Top menuen start-->
+        <div class="top-box">
+          <div class="top-box-wrapper">
+            <ul class="top-menu">
+              <li><a href="#">Ehverv</a></li>
+              <li><a href="#">Klubben</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Skagen Air</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M0.0800781 0.914062H15.5801V10.4141H0.0800781V0.914062Z" fill="#D22F27"/>
+                <path d="M15.5801 4.91406H6.33008V0.914062H4.83008V4.91406H0.0800781V6.41406H4.83008V10.4141H6.33008V6.41406H15.5801V4.91406Z" fill="white"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      <!--Top menu slutter-->
+      <!--Start på navigationen med dropdown-->
+      <nav class="main-nav mainNav">
+        <div class="nav-container">
+          <a href="index.html">
+          <img class="logo" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens museers logo">
+        </a>
+          <ul class="nav-menu">
+            <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+              <a href="#" class="dropdown-link">Besøg <span class="arrow-down"></span></a>
+              <ul class="dropdown">
+                <li><a href="billet-side.html">Åbningstider og priser</a></li>
+                <li><a href="#">Omvisning</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Museumbutikken</a></li>
+                <li><a href="planlagning.html">Praktisk information</a></li>
+                <li><a href="#">Skoleudflygt</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Udstillinger <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                  <li><a href="#">Aktuelle Udstillinger</a></li>
+                  <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="skagensmalerne.html">Skagensmalerne</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="arrangementer.html">Arrangementer</a>
+                <ul class="dropdown">
+            
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Om museerne <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Vidste du? <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="#">Vielser</a></li>
+                  <li><a href="#">Støt os</a></li>
+                  <li><a href="#">Cafe</a></li>
+                  <li><a href="#">Fotobestilling</a></li>
+                  <li><a href="#">Låneanmodninger</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="aegte-ung.html">Ægte ung</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+          </ul>
+          <div class="buy-button">
+            <div class="button-wrapper">
+            <a href="#">Køb billet til kunsten</a>
+          </div>
+        </div>
+        </div>
+        </nav>
+        
+      </header>
+    </div>
+     <!--burger på naviagtionen-->
+     <a href="index.html">
+      <img class="logo-mobile" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens logo">
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        &#9776; <!-- burger ikon -->
+      </button>
+      <!--navigation på mobil-->
+      <nav class="mobile-nav" id="mobile-menu" aria-hidden="true">
+        <ul class="top-menu">
+          <li><a href="#">Ehverv</a></li>
+          <li><a href="#">Klubben</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Skagen Air</a></li>
+          <li><a href="#">Top 5</a></li>
+        </ul>
+
+        <ul>
+          <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+            <a href="#">Besøg</a>
+            <ul class="dropdown">
+              <li><a href="billet-side.html">Åbningstider og priser</a></li>
+              <li><a href="#">Omvisningg</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Museumbutikken</a></li>
+              <li><a href="planlagning.html">Praktisk information</a></li>
+              <li><a href="#">Skoleudflygt</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown dropdown-click">
+              <a href="#">Udstillinger</a>
+              <ul class="dropdown">
+                <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                <li><a href="#">Aktuelle Udstillinger</a></li>
+                <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="skagensmalerne.html">Skagensmalerne</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="arrangementer.html">Arrangementer</a>
+              <ul class="dropdown">
+          
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Om museerne</a>
+              <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Vidste du?</a>
+              <ul class="dropdown">
+                <li><a href="#">Vielser</a></li>
+                <li><a href="#">Støt os</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Fotobestilling</a></li>
+                <li><a href="#">Låneanmodninger</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="aegte-ung.html">Ægte ung</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+          <li><a href="#" class="buy-button">Køb billet</a></li>
+        </ul>
+      </nav>
+    <!--Slut på naviagtionen-->
+    <section class="hero-billedet">
+      <div class="hero-gradient">
+        <h1>Skagens <br> kunstmuseer</h1>
+      </div>
+    </section>
+    <main>
+    
+      <div class="info-box">
+        <div class="info-box__text">
+          <h3>Velkommen til Skagen <br> kunstmuseum</h3>
+          <p>Vi åbner i dag (torsdag) <br> <span class="info-bold">10 - 17</span></p>
+        </div>
+      
+        <!-- Lodret streg -->
+        <div class="info-box__divider"></div>
+      
+        <div class="info-box__buttons">
+          <button class="btn1">
+            <svg class="icon-only" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M11.1758 21.4297C9.09908 21.4297 7.06901 20.8139 5.3423 19.6601C3.61558 18.5064 2.26977 16.8665 1.47505 14.9479C0.680331 13.0292 0.472396 10.918 0.877541 8.88124C1.28269 6.84444 2.28271 4.97352 3.75116 3.50507C5.21962 2.03662 7.09054 1.03659 9.12734 0.631447C11.1641 0.226302 13.2753 0.434237 15.194 1.22896C17.1126 2.02368 18.7525 3.36949 19.9062 5.0962C21.06 6.82292 21.6758 8.85299 21.6758 10.9297C21.6758 13.7145 20.5695 16.3852 18.6004 18.3543C16.6313 20.3234 13.9606 21.4297 11.1758 21.4297ZM11.1758 1.92969C9.39575 1.92969 7.6557 2.45753 6.17565 3.44647C4.69561 4.4354 3.54206 5.84101 2.86087 7.48554C2.17968 9.13008 2.00145 10.9397 2.34872 12.6855C2.69599 14.4313 3.55315 16.035 4.81182 17.2937C6.0705 18.5523 7.67414 19.4095 9.41997 19.7568C11.1658 20.104 12.9754 19.9258 14.6199 19.2446C16.2645 18.5634 17.6701 17.4099 18.659 15.9298C19.6479 14.4498 20.1758 12.7097 20.1758 10.9297C20.1758 8.54274 19.2276 6.25356 17.5397 4.56573C15.8519 2.8779 13.5627 1.92969 11.1758 1.92969Z"/>
+              <path d="M14.6183 15.4297L10.4258 11.2372V4.17969H11.9258V10.6147L15.6758 14.3722L14.6183 15.4297Z"/>
+            </svg> Tjek Åbningstider</button>
+          <div class="info-box__buttons">
+            <button class="btn2">
+              <svg class="icon-only" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path d="M17.6758 2.92969H15.6758V1.92969C15.6758 1.66447 15.5704 1.41012 15.3829 1.22258C15.1954 1.03504 14.941 0.929688 14.6758 0.929688C14.4106 0.929688 14.1562 1.03504 13.9687 1.22258C13.7811 1.41012 13.6758 1.66447 13.6758 1.92969V2.92969H7.67578V1.92969C7.67578 1.66447 7.57042 1.41012 7.38289 1.22258C7.19535 1.03504 6.941 0.929688 6.67578 0.929688C6.41056 0.929688 6.15621 1.03504 5.96867 1.22258C5.78114 1.41012 5.67578 1.66447 5.67578 1.92969V2.92969H3.67578C2.88013 2.92969 2.11707 3.24576 1.55446 3.80837C0.991852 4.37098 0.675781 5.13404 0.675781 5.92969V17.9297C0.675781 18.7253 0.991852 19.4884 1.55446 20.051C2.11707 20.6136 2.88013 20.9297 3.67578 20.9297H17.6758C18.4714 20.9297 19.2345 20.6136 19.7971 20.051C20.3597 19.4884 20.6758 18.7253 20.6758 17.9297V5.92969C20.6758 5.13404 20.3597 4.37098 19.7971 3.80837C19.2345 3.24576 18.4714 2.92969 17.6758 2.92969ZM18.6758 17.9297C18.6758 18.1949 18.5704 18.4493 18.3829 18.6368C18.1954 18.8243 17.941 18.9297 17.6758 18.9297H3.67578C3.41056 18.9297 3.15621 18.8243 2.96867 18.6368C2.78114 18.4493 2.67578 18.1949 2.67578 17.9297V10.9297H18.6758V17.9297ZM18.6758 8.92969H2.67578V5.92969C2.67578 5.66447 2.78114 5.41012 2.96867 5.22258C3.15621 5.03504 3.41056 4.92969 3.67578 4.92969H5.67578V5.92969C5.67578 6.1949 5.78114 6.44926 5.96867 6.63679C6.15621 6.82433 6.41056 6.92969 6.67578 6.92969C6.941 6.92969 7.19535 6.82433 7.38289 6.63679C7.57042 6.44926 7.67578 6.1949 7.67578 5.92969V4.92969H13.6758V5.92969C13.6758 6.1949 13.7811 6.44926 13.9687 6.63679C14.1562 6.82433 14.4106 6.92969 14.6758 6.92969C14.941 6.92969 15.1954 6.82433 15.3829 6.63679C15.5704 6.44926 15.6758 6.1949 15.6758 5.92969V4.92969H17.6758C17.941 4.92969 18.1954 5.03504 18.3829 5.22258C18.5704 5.41012 18.6758 5.66447 18.6758 5.92969V8.92969Z"/>
+              </svg>
+              Forbered dit besøg
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="oplevelser">
+        <h2>Det kan du opleve</h2>
+        <p>Træd ind på Skagens Kunstmuseer og opleve mange forskellige Skagens berømte <br> kunstværker, maler og spændende arrangementer.</p>
+      </div>
+      <!--Bento boks layout-->
+      <div class="bento-layout">
+        
+        <a href="arrangementer.html" class="box b">
+          <div class="bento-img-wrapper">
+          <img src="./assets/img/Bentoboks_KoebenhavnsBoer.webp" alt="Billede af værk, som er lånt fra Københavns Børs.">
+          <div class="overlay"></div>
+          <div class="bento-text">
+          <p class="bento-text-main">Arrangementer</p>
+          <p class="bento-text-highlight">Tag et kig på kommende arrangementer</p>
+
+          <div class="bento-hover-text">
+            <p>Det store, ikoniske gruppeportræt, Fra Københavns Børs (1895) af P.S. Krøyer kan opleves på Skagens museum frem til og med uge 43.</p>
+            <span class="arrow">→</span>
+          </div>
+
+         
+        </div>
+        </div>
+      </a>
+      
+       
+        <a href="udstillinger.html" class="box a">
+          <div class="bento-img-wrapper">
+          <img src="./assets/img/Bentoboks_udstilling.webp" alt="Et værk, som er lavet af P.S. Krøyer som hedder Roser.">
+          <div class="overlay"></div>
+          <div class="bento-text">
+            <p class="bento-text-main">Udstilling</p>
+            <p class="bento-text-highlight">Vores udstillinger</p>
+            
+            <div class="bento-hover-text">
+              <p>Oplev værkerne fra skagensmalerne og få indblik i deres liv og inspiration</p>
+              <span class="arrow">→</span>
+            </div>
+        </div>
+        </div>
+      </a>
+      
+        
+        <a href="aegte-ung.html" class="box b2">
+          <div class="bento-img-wrapper">
+          <img src="./assets/img/EagteUnge.webp" alt="Billede af unge mennesker, som er en del af Skagens museum projekt, om unge mennesker.">
+          <div class="overlay"></div>
+          <div class="bento-text">
+            <p class="bento-text-main">Ægte ung</p>
+            <p class="bento-text-highlight">Museets ungeprojekt</p>
+
+            <div class="bento-hover-text">
+              <p>Et projekt for unge hvor kreativet og samarbejde er i fokus.</p>
+              <span class="arrow">→</span>
+            </div>
+        </div>
+      </div>
+    </a>
+      
+       
+        <a href="skagensmalerne.html" class="box c">
+          <div class="bento-img-wrapper">
+            <div class="overlay"></div>
+          <img src="./assets/img/Bentoboks_samlingen.webp" alt="Billede inde på et museum, hvor det er værker som hænger.">
+          <div class="bento-text">
+            <p class="bento-text-main">Skagensmalerne</p>
+            <p class="bento-text-highlight">Gå på opdagelse i Skagensmalernes liv</p>
+
+            <div class="bento-hover-text">
+              <p>Her finder du skagensmalernes hovedværker sammen med hyppige nyophængninger af værker fra Skagens Kunstmuseers samling </p>
+              <span class="arrow">→</span>
+            </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+      <div class="konkurrence-box">
+        <div class="konkurrence-image">
+          <img src="./assets/img/fotokonkurrence.png" alt="Et billede med polarid billeder som er på et bord.">
+        </div>
+        <div class="konkurrence-content">
+          <h3>Open atelier - <span class="info-color">Fotokonkurrence</span></h3>
+          <p>Er du mellem 18 og 27 år og vild med at tage billeder? Så har vi det perfekte arrangement for dig! Deltag i vores konkurrence, hvor du møder andre kreative unge og oplever kunst i fotografiets tegn.</p>
+          <div class="konkurrence-icons">
+        
+            <div class="konk-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <g clip-path="url(#clip0_337_819)">
+                <path d="M22.5889 3.73208C22.5889 3.18724 22.3724 2.6647 21.9872 2.27944C21.6019 1.89417 21.0794 1.67773 20.5345 1.67773H2.73017C2.18532 1.67773 1.66279 1.89417 1.27753 2.27944C0.892263 2.6647 0.675823 3.18724 0.675823 3.73208V13.319C0.675823 13.8639 0.892263 14.3864 1.27753 14.7717C1.66279 15.1569 2.18532 15.3734 2.73017 15.3734H4.78452C4.96614 15.3734 5.14031 15.3012 5.26873 15.1728C5.39716 15.0444 5.4693 14.8702 5.4693 14.6886C5.4693 14.123 5.609 13.7614 5.79252 13.5163C5.97878 13.267 6.26319 13.0734 6.64576 12.9356C7.45106 12.6425 8.51795 12.6343 9.578 12.6343C9.66808 12.6342 9.75727 12.6164 9.84047 12.5819C9.92366 12.5474 9.99922 12.4967 10.0628 12.4329L10.4559 12.0412L12.1172 10.38C12.7568 9.74037 13.1854 9.55273 13.4251 9.51713C13.6168 9.48973 13.7456 9.54726 13.8771 9.68421C14.1578 9.9773 14.3482 10.1868 14.4057 10.4238C14.4413 10.5648 14.466 10.8867 13.888 11.4646L9.77932 15.5733C9.65074 15.7017 9.57843 15.876 9.5783 16.0577C9.57824 16.1477 9.5959 16.2368 9.63027 16.3199C9.66465 16.4031 9.71506 16.4786 9.77864 16.5423C9.84222 16.606 9.91771 16.6565 10.0008 16.691C10.0839 16.7255 10.173 16.7433 10.263 16.7433C10.353 16.7434 10.4421 16.7257 10.5252 16.6914C10.6084 16.657 10.6839 16.6066 10.7476 16.543L11.9158 15.3734H16.1423L12.6362 18.8795C12.4455 19.0705 12.219 19.222 11.9696 19.3254C11.7203 19.4288 11.453 19.482 11.1831 19.4821H1.36061C1.17899 19.4821 1.00481 19.5542 0.87639 19.6826C0.747969 19.8111 0.675823 19.9853 0.675823 20.1669C0.675823 20.3485 0.747969 20.5227 0.87639 20.6511C1.00481 20.7795 1.17899 20.8516 1.36061 20.8516H11.1831C12.0908 20.8515 12.9612 20.4909 13.6031 19.8491L18.0789 15.3734H20.5345C21.0794 15.3734 21.6019 15.1569 21.9872 14.7717C22.3724 14.3864 22.5889 13.8639 22.5889 13.319V3.73208ZM17.7954 14.0038H13.2854L14.8563 12.4343C15.6479 11.6427 15.9205 10.8538 15.7369 10.0992C15.7005 9.95089 15.6477 9.80711 15.5794 9.67052C15.7571 9.0583 15.7898 8.41314 15.6751 7.78608C15.5604 7.15902 15.3013 6.56726 14.9184 6.0576C14.5355 5.54795 14.0392 5.13438 13.4689 4.84961C12.8986 4.56484 12.2698 4.41669 11.6323 4.41686C10.8381 4.41681 10.0608 4.64697 9.39463 5.0795C8.72846 5.51203 8.20193 6.12838 7.87878 6.85394C7.55563 7.57951 7.44971 8.38318 7.57385 9.1677C7.69798 9.95221 8.04685 10.6839 8.57822 11.2743C7.78661 11.2976 6.92104 11.377 6.17737 11.6482C5.61995 11.8509 5.08719 12.1741 4.69824 12.6945L4.69002 12.7027C4.55886 12.2857 4.29809 11.9214 3.94561 11.6627C3.59314 11.4041 3.16735 11.2647 2.73017 11.2647H2.04539V5.78643H2.73017C3.27502 5.78643 3.79755 5.56999 4.18282 5.18473C4.56808 4.79946 4.78452 4.27693 4.78452 3.73208V3.0473H18.4802V3.73208C18.4802 4.27693 18.6966 4.79946 19.0819 5.18473C19.4671 5.56999 19.9897 5.78643 20.5345 5.78643H21.2193V11.2647H20.5345C19.9897 11.2647 19.4671 11.4811 19.0819 11.8664C18.6966 12.2517 18.4802 12.7742 18.4802 13.319V14.0038H17.7954ZM2.73017 14.0038H2.71784C2.53837 14.0006 2.36735 13.927 2.24158 13.7989C2.11581 13.6709 2.04536 13.4985 2.04539 13.319V12.6343H2.73017C2.91179 12.6343 3.08596 12.7064 3.21439 12.8348C3.34281 12.9632 3.41495 13.1374 3.41495 13.319V14.0038H2.73017ZM11.6323 5.78643C12.3289 5.78644 12.9993 6.05184 13.5072 6.52864C14.015 7.00543 14.3221 7.6578 14.366 8.353C14.051 8.18317 13.6675 8.09689 13.2252 8.16263C12.565 8.25987 11.8789 8.68032 11.1489 9.4103L9.90669 10.6525C9.46724 10.2959 9.14904 9.81192 8.99583 9.26712C8.84261 8.72232 8.86191 8.14344 9.05106 7.61005C9.24022 7.07666 9.58995 6.61496 10.0522 6.28841C10.5144 5.96186 11.0664 5.7865 11.6323 5.78643ZM21.2193 4.41686H20.5345C20.3529 4.41686 20.1787 4.34472 20.0503 4.2163C19.9219 4.08787 19.8497 3.9137 19.8497 3.73208V3.0473H20.5345C20.7161 3.0473 20.8903 3.11945 21.0187 3.24787C21.1472 3.37629 21.2193 3.55047 21.2193 3.73208V4.41686ZM3.41495 3.0473V3.73208C3.41495 3.9137 3.34281 4.08787 3.21439 4.2163C3.08596 4.34472 2.91179 4.41686 2.73017 4.41686H2.04539V3.73208C2.04539 3.55047 2.11753 3.37629 2.24596 3.24787C2.37438 3.11945 2.54856 3.0473 2.73017 3.0473H3.41495ZM19.8497 14.0038V13.319C19.8497 13.1374 19.9219 12.9632 20.0503 12.8348C20.1787 12.7064 20.3529 12.6343 20.5345 12.6343H21.2193V13.319C21.2193 13.5007 21.1472 13.6748 21.0187 13.8033C20.8903 13.9317 20.7161 14.0038 20.5345 14.0038H19.8497Z" fill="#2B2A27"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_337_819">
+                  <rect width="24" height="24" fill="white" transform="translate(0.675781 0.265625)"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <p>Pris</p>
+          </div>
+          <div class="konk-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17.3008 2.16562H14.4508V0.740625C14.4508 0.614647 14.4007 0.493829 14.3117 0.404749C14.2226 0.31567 14.1018 0.265625 13.9758 0.265625C13.8498 0.265625 13.729 0.31567 13.6399 0.404749C13.5508 0.493829 13.5008 0.614647 13.5008 0.740625V2.16562H6.85078V0.740625C6.85078 0.614647 6.80074 0.493829 6.71166 0.404749C6.62258 0.31567 6.50176 0.265625 6.37578 0.265625C6.2498 0.265625 6.12898 0.31567 6.03991 0.404749C5.95083 0.493829 5.90078 0.614647 5.90078 0.740625V2.16562H3.05078C2.42112 2.16638 1.81747 2.41684 1.37224 2.86208C0.927 3.30731 0.676535 3.91097 0.675781 4.54063V16.8906C0.676535 17.5203 0.927 18.1239 1.37224 18.5692C1.81747 19.0144 2.42112 19.2649 3.05078 19.2656H17.3008C17.9307 19.2656 18.5348 19.0154 18.9802 18.57C19.4256 18.1246 19.6758 17.5205 19.6758 16.8906V4.54063C19.6758 3.91074 19.4256 3.30665 18.9802 2.86125C18.5348 2.41585 17.9307 2.16562 17.3008 2.16562ZM18.7258 16.8906C18.7258 17.2686 18.5756 17.631 18.3084 17.8983C18.0412 18.1655 17.6787 18.3156 17.3008 18.3156H3.05078C2.67285 18.3156 2.31039 18.1655 2.04315 17.8983C1.77591 17.631 1.62578 17.2686 1.62578 16.8906V8.81563H18.7258V16.8906ZM18.7258 7.86562H1.62578V4.54063C1.62578 3.75402 2.26228 3.11562 3.05078 3.11562H5.90078V4.54063C5.90078 4.6666 5.95083 4.78742 6.03991 4.8765C6.12898 4.96558 6.2498 5.01562 6.37578 5.01562C6.50176 5.01562 6.62258 4.96558 6.71166 4.8765C6.80074 4.78742 6.85078 4.6666 6.85078 4.54063V3.11562H13.5008V4.54063C13.5008 4.6666 13.5508 4.78742 13.6399 4.8765C13.729 4.96558 13.8498 5.01562 13.9758 5.01562C14.1018 5.01562 14.2226 4.96558 14.3117 4.8765C14.4007 4.78742 14.4508 4.6666 14.4508 4.54063V3.11562H17.3008C17.6787 3.11562 18.0412 3.26576 18.3084 3.533C18.5756 3.80024 18.7258 4.16269 18.7258 4.54063V7.86562Z" fill="#2B2A27"/>
+            </svg>
+            <p>Tidspunkt</p>
+          </div>
+          <div class="konk-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+              <path d="M16.3008 4.64062H5.05078C4.36043 4.64062 3.80078 5.20027 3.80078 5.89062V10.8906C3.80078 11.581 4.36043 12.1406 5.05078 12.1406H16.3008C16.9911 12.1406 17.5508 11.581 17.5508 10.8906V5.89062C17.5508 5.20027 16.9911 4.64062 16.3008 4.64062Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.3008 12.1406H5.05078C4.36043 12.1406 3.80078 12.7003 3.80078 13.3906V15.8906C3.80078 16.581 4.36043 17.1406 5.05078 17.1406H16.3008C16.9911 17.1406 17.5508 16.581 17.5508 15.8906V13.3906C17.5508 12.7003 16.9911 12.1406 16.3008 12.1406Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.3008 4.64062H5.05078C4.71955 4.6397 4.40214 4.5077 4.16792 4.27348C3.9337 4.03926 3.80171 3.72186 3.80078 3.39062C3.80171 3.05939 3.9337 2.74199 4.16792 2.50777C4.40214 2.27355 4.71955 2.14155 5.05078 2.14062H16.3008C16.632 2.14155 16.9494 2.27355 17.1836 2.50777C17.4179 2.74199 17.5499 3.05939 17.5508 3.39062C17.5499 3.72186 17.4179 4.03926 17.1836 4.27348C16.9494 4.5077 16.632 4.6397 16.3008 4.64062ZM6.30078 17.1406V18C6.30078 18.1036 6.25963 18.203 6.18637 18.2762C6.11311 18.3495 6.01376 18.3906 5.91016 18.3906H4.81641C4.71281 18.3906 4.61345 18.3495 4.54019 18.2762C4.46694 18.203 4.42578 18.1036 4.42578 18V17.1406H6.30078ZM16.9258 17.1406V18C16.9258 18.1036 16.8846 18.203 16.8114 18.2762C16.7381 18.3495 16.6388 18.3906 16.5352 18.3906H15.4414C15.3378 18.3906 15.2384 18.3495 15.1652 18.2762C15.0919 18.203 15.0508 18.1036 15.0508 18V17.1406H16.9258Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.0508 15.2656C15.396 15.2656 15.6758 14.9858 15.6758 14.6406C15.6758 14.2954 15.396 14.0156 15.0508 14.0156C14.7056 14.0156 14.4258 14.2954 14.4258 14.6406C14.4258 14.9858 14.7056 15.2656 15.0508 15.2656Z" stroke="black" stroke-width="1.25" stroke-linejoin="round"/>
+              <path d="M6.30078 15.2656C6.64596 15.2656 6.92578 14.9858 6.92578 14.6406C6.92578 14.2954 6.64596 14.0156 6.30078 14.0156C5.9556 14.0156 5.67578 14.2954 5.67578 14.6406C5.67578 14.9858 5.9556 15.2656 6.30078 15.2656Z" stroke="black" stroke-width="1.25" stroke-linejoin="round"/>
+              <path d="M10.6758 4.64062V12.1406M3.80078 3.39062V14.6406M17.5508 3.39062V14.6406" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Transport</p>
+          </div>
+          </div>
+          <div class="konk-text">
+            <p>Gratis</p>
+            <p>17 maj kl. 10:00 - 17:30</p>
+            <p>Gratis bus (kræver tilmelding)</p>
+          </div>
+          
+      
+          <button class="konkurrence-button">Bliv klogere på konkurrencen</button>
+        </div>
+      </div>
+      
+      <section class="tre-museer">
+        <div class="tre-museer-indhold">
+        <h2 class="museer-overskrift">Vi er tre museer</h2>
+        <div class="tabs">
+          <div class="tab active" data-tab="skagen">
+            <div class="tab-header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" >
+                <path d="M30.1849 0.265625H25.5182C25.3848 0.265625 25.2515 0.298936 25.1516 0.365669L12.6516 8.93234H1.51823C1.15159 8.93234 0.851562 9.23236 0.851562 9.599V28.9323C0.851562 29.299 1.15159 29.599 1.51823 29.599H24.1849C24.5515 29.599 24.8516 29.299 24.8516 28.9323V15.599H26.8516V28.9323C26.8516 29.299 27.1516 29.599 27.5182 29.599C27.8849 29.599 28.1849 29.299 28.1849 28.9323V15.599H30.1849C30.5515 15.599 30.8516 15.299 30.8516 14.9323V0.932336C30.8516 0.565697 30.5515 0.265625 30.1849 0.265625ZM2.18487 15.599H4.18487V28.2656H2.18487V15.599ZM20.1849 15.599V17.599H5.5182V15.599H20.1849ZM5.5182 18.9323H12.1849V28.2656H5.5182V18.9323ZM13.5182 18.9323H20.1849V28.2656H13.5182V18.9323ZM23.5182 28.2656H21.5182V15.599H23.5182V28.2656ZM24.1849 14.2656H2.18487V10.2656H12.8515C12.9849 10.2656 13.1182 10.2323 13.2182 10.1656L25.7182 1.59891H29.5182V6.26558C29.5182 6.26558 29.5182 6.47343 29.5182 6.84007C29.5182 7.20671 29.5182 7.59891 29.5182 7.59891V8.93225V9.59489V10.2656V11.5989V12.2808V12.9322V14.2656L24.1849 14.2656Z" class="tab-icon"/>
+              </svg>
+              <div class="tab-texts">
+                <h4 class="tab-overskrift">Skagens kunstmuseum</h4>
+                <p class="tab-text">Vores hovedmuseum der rummer de største værker</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab" data-tab="ancher">
+            <div class="tab-header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26">
+                <path d="M30.8516 9.59896V24.8714C30.8516 25.238 30.5515 25.5381 30.1849 25.5381H1.51823C1.15159 25.5381 0.851562 25.238 0.851562 24.8714V9.59896V9.56565V9.53234C0.851562 9.49903 0.851562 9.4323 0.884874 9.39899V9.36568C0.918185 9.29905 0.918185 9.26563 0.951496 9.23232L5.18483 3.39899V0.932292C5.18483 0.565653 5.48486 0.265625 5.8515 0.265625C6.21813 0.265625 6.51816 0.565653 6.51816 0.932292V2.93229H8.51816V0.932292C8.51816 0.565653 8.81819 0.265625 9.18483 0.265625C9.55147 0.265625 9.8515 0.565653 9.8515 0.932292V2.93229H21.8515V0.932292C21.8515 0.565653 22.1515 0.265625 22.5182 0.265625C22.8848 0.265625 23.1848 0.565653 23.1848 0.932292V2.93229H25.1848V0.932292C25.1848 0.565653 25.4849 0.265625 25.8515 0.265625C26.2181 0.265625 26.5182 0.565653 26.5182 0.932292V3.39899L30.7182 9.23232C30.7515 9.26563 30.7848 9.33237 30.7848 9.36568V9.39899C30.7848 9.4323 30.8181 9.46561 30.8181 9.53234C30.8515 9.53234 30.8516 9.56565 30.8516 9.59896ZM5.51823 12.2048V14.2048H7.51823V12.2048H5.51823ZM8.85156 12.2048V14.2048H10.8516V12.2048H8.85156ZM12.1849 12.2048V14.2048H14.1849V12.2048H12.1849ZM10.8516 15.5381H8.85156V17.5381H10.8516V15.5381ZM7.51823 15.5381H5.51823V17.5381H7.51823V15.5381ZM12.1849 17.5381H14.1849V15.5381H12.1849V17.5381ZM5.51823 24.2048H14.1849V18.8715H5.51823V24.2048ZM15.5182 24.2048H17.5182V12.2048H15.5182V24.2048ZM18.8516 24.2048H26.1849V12.2048H18.8516V24.2048ZM29.5182 10.8715V10.2656H2.1849V10.8715H29.5182ZM2.81823 8.9323H28.8849L25.5182 4.26563H6.1849L2.81823 8.9323ZM2.18487 24.2048H4.18487V12.2048H2.18487V24.2048ZM29.5182 12.2048H27.5182V24.2048H29.5182V12.2048Z" class="tab-icon"/>
+              </svg>
+              <div class="tab-texts">
+                <h4 class="tab-overskrift">Anchers hus</h4>
+                <p class="tab-text">Hjem for vores to vigtige kunstnere, Anna og Michael Ancher</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab" data-tab="drachmann">
+            <div class="tab-header">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="33" viewBox="0 0 29 33" fill="none">
+                <path d="M28.0516 13.3545V31.4879H0.851562V13.3545L14.4516 1.26562L28.0516 13.3545Z" class="icon-stroke" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M0.851562 16.3759H28.0516M6.14045 8.82031V31.487M22.7627 8.82031V31.487" class="icon-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.4316 22.4199H17.4761V31.4866H11.4316V22.4199Z" class="icon-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="tab-texts">
+                <h4 class="tab-overskrift">Drachmanns hus</h4>
+                <p class="tab-text">I huset kan du både opleve kunst og hans personlige genstande</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="museer-container">
+          <div class="museer-wrapper" id="tab-content">
+            <!-- Indhold skifter dynamisk her, som kommer fra tabs.js -->
+          </div>
+        </div>
+      
+
+       
+        </div>
+      
+      </section>
+
+      <section class="gallery-container">
+        <h2>Udforsk vores udvalgte værker</h2>
+      
+        <div class="bento-container">
+          
+
+          
+          <a href="enkelt-vaerk.html" class="item a">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/roser.webp" alt="Værk fra P.S. Krøyer, med titlen Rose." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">Roser</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>Et romantisk og roligt maleri af P.S. Krøyer</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+          <a href="enkelt-vaerk.html" class="item b">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/sommeraften_ved_skagen.webp" alt="Værk af P.S. krøyer, med titlen Sommeraften ved skagen." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">Sommeraften ved Skagen</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>Et af P.S. Krøyers stemningsbillederne fra strandene omkring Skagen</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+          <a href="enkelt-vaerk.html" class="item c">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/Anna_anchers_hjem_fra_marken.webp" alt="Værk af Michael Ancher, med titlen Anna Ancher vender hjem fra marken." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">Anna Anchers vender hjem fra marken</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>Et varmt og stemningsfuldt billede af Anna Ancher</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+          <a href="enkelt-vaerk.html" class="item d">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/baaden_saettes_i_soen.webp" alt="Værk af Oscar Bjorck, med titlen Båden sættes i søen, Skagen." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">Båden sættes i søen, Skagen</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>P.S. Krøyers største friluftsmaleri fra Skagen</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+          <a href="enkelt-vaerk.html" class="item e">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/den_druknede.webp" alt="Værk af Michael Ancher, med titlen Den druknede." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">Den druknede</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>Et mørkt og stærkt udtryk for havets kræfter og konsekvenser.</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+          <a href="enkelt-vaerk.html" class="item f">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/solskin_i_den_blaa_stue.webp" alt="Værk af Anna Ancher, med titlen Solskin i den blå stue." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">Solskin i den blå stue</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>På billedet sidder Anna og Michael Anchers datter, Helga Ancher, og hækler. Hun sidder i den blå stue på Brøndums Hotel, hvor hendes bedstemor, Ane Brøndum, ofte opholdt sig</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+          <a href="enkelt-vaerk.html" class="item g">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/en_strandpromenade.webp" alt="Værk af Michael Ancher, med titlen En strandpromenade." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">En strandpromenade</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>I Anchers billeder fra 1880'erne, er stranden først og fremmest en arbejdsplads, men i 1890'erne bliver stranden også en promenade for det bedre borgerskab</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+          <a href="enkelt-vaerk.html" class="item h">
+            <div class="bento-img-wrapper2">
+              <div class="overlay2"></div>
+              <img src="assets/img/sommeraften_paa_skagen_sonderstrand.webp" alt="Værk af P.S. Krøyer, med titlen Sommeraften på Skagen Sønderstrand." />
+              <div class="bento-text2">
+                <h2 class="bento-text-main-hidden">Sommeraften på Skagen Sønderstrand</h2>
+                <div class="bento-hover-text-hidden">
+                  <p>P.S. Krøyer fik ideen til det stemningsfulde billede i 1892 i forbindelse med et middagsselskab i hans sommerbolig i Skagen</p>
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+      
+        </div>
+      </section>
+
+      
+      
+      <section class="nyhedsbrev-box">
+        <div class="nyhedsbrev-content">
+        <h3>Tilmeld dig vores nyhedsbrev</h3>
+        <p>Få de nyeste nyheder fra Skagens kunstmuseer - hold dig opdateret på aktuelle udstillinger, særlige arrangementer og unikke oplevelser fra alle tre museer!</p>
+        <form id="emailForm">
+          <div class="email-input-wrapper">
+            <input type="email" id="emailInput" placeholder="Joedoe@eksempel.com" required />
+            <button type="submit" class="arrow">→</button>
+          </div>
+        </form>
+        
+      </div>
+      <div class="nyhedsbrev-img">
+        <img src="./assets/img/nyhedsbrev-billede.png" alt="3 skagens magasiner">
+      </div>
+      </section>
+      
+    </main>
+
+
+
+
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./assets/img/skagenskunstmusum-footer.png" alt="Skagens logo">
+      </div>
+    
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h4>Genvej</h4>
+          <a href="#">English</a>
+          <a href="#">Deutsch</a>
+          <a href="#">Medarbejder</a>
+          <a href="#">Ledigestillinger</a>
+          <div class="footer__column">
+       
+          
+            <div class="copyright">
+              <div class="copyright__text">
+                <div class="copyright__topline">
+                  <img src="./assets/icons/copyright.png" alt="Copyright ikon">
+                  <p>Skagens Kunstmuseer</p>
+                </div>
+                <p class="cvr">CVR: 12345678</p>
+              </div>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        <div class="footer__column">
+          <h4>Vores museer</h4>
+          <a href="#">Skagens kunstmuseum</a>
+          <a href="#">Anchers hus</a>
+          <a href="#">Drachmanns hus</a>
+        </div>
+        <div class="footer__column">
+          <h4>Besøg</h4>
+          <a href="#">Åbningstider og priser</a>
+          <a href="#">Omvisning</a>
+          <a href="#">Cafe</a>
+          <a href="#">Museumbutikken</a>
+          <a href="#">Undervisning</a>
+        </div>
+        <div class="footer__column">
+          <h4>Kontakt os</h4>
+          <p>Info@skagensmuseum.dk</p>
+          <p>Tel. +45 9844 6444</p>
+          <p>Brøndumsvej 4 DK-9990 Skagen</p>
+
+          <div class="footer__icons">
+            <a href="#"><img src="./assets/icons/facebook-footer.png" alt="Facebook"></a>
+            <a href="#"><img src="./assets/icons/instagram-footer.png" alt="Instagram"></a>
+            <a href="#"><img src="./assets/icons/twitter-footer.png" alt="Twitter"></a>
+            <a href="#"><img src="./assets/icons/pinterest-footer.png" alt="Pinterest"></a>
+          </div>
+
+          <div class="cookies">
+            <p>Cookie Privatlivspolitik</p>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+    
+    
+      <script src="./assets/js/nav.js"></script>
+      <script src="./assets/js/tabs.js"></script>
+      <script src="./assets/js/nyhedsbrev.js"></script>
+</body>
+</html>

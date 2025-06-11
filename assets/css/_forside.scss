@@ -1,0 +1,1203 @@
+main{
+    margin: 0 10%;
+   
+}
+
+.hero-billedet {
+    background-image: url('../img/Hero-skagensmuseum.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  
+    h1 {
+      color: black;
+      font-size: 72px;
+      
+    }
+
+  
+  }
+
+  .hero-gradient{
+    display: flex;
+    width: 749px;
+    height: 310px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.95) 10%, #FFF 50.23%, rgba(255, 255, 255, 0.95) 90%, rgba(255, 255, 255, 0.00) 100%);
+  }
+
+  .info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid; 
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #C6DFFF, #FFEBD4 40%, #FFD989);
+    gap: 24px;
+  
+    &__text {
+      flex: 1;
+  
+      h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.5rem;
+        color: #333;
+        white-space: nowrap;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 1rem;
+        color: #666;
+      }
+    }
+  
+  
+  
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      .btn1,
+      .btn2 {
+        padding: 12px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 60px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+  
+      .btn1 {
+        background: var(--primary-yellow-skagen, #ECA619);
+        display: inline-flex;          
+        align-items: center; 
+        text-align: center;
+        font-size: 12px;         
+        gap: 8px;                      
+        padding: 12px 20px;
+        border-radius: 60px;
+        background-color: #ECA619;
+        border: 2px solid #ECA619;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+        svg {
+          fill: currentColor; 
+          transition: fill 0.3s ease;
+        }
+  
+        &:hover {
+          background: white;        
+          color: #ECA619;            
+          border-color: #ECA619;
+          svg {
+            fill: #ECA619; 
+          }
+        }
+      }
+  
+      .btn2 {
+        background: var(--PS-Himmelbl, #7098DD);
+        display: inline-flex;          
+        align-items: center; 
+        text-align: center;
+        font-size: 12px;         
+        gap: 8px;                      
+        padding: 12px 20px;
+        border-radius: 60px;
+        background-color: #7098DD;
+        border: 2px solid #7098DD;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        white-space: nowrap;
+
+        svg {
+          fill: currentColor; 
+          transition: fill 0.3s ease;
+        }
+  
+        &:hover {
+          background: white;         
+          color: #7098DD;            
+          border-color: #7098DD;
+          svg {
+            fill: #7098DD; 
+          }
+        }
+      }
+    }
+  }
+
+  div.info-box__divider{
+    
+      width: 1px;
+      height: 135px;
+      background: linear-gradient(90deg, rgba(174, 204, 255, 0.50) 0%, #7098DD 50%, rgba(174, 204, 255, 0.50) 100%);
+      align-self: center;
+      margin-right: 3rem;
+  }
+
+  .info-color{
+    color: #B3700E;
+  }
+  .info-bold{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin-top: 18px;
+  }
+  
+
+  // bento box sektion start
+  .oplevelser{
+    margin-top: 80px;
+    margin-bottom: 56px;
+  }
+
+  .oplevelser h2{
+    margin-bottom: 16px;
+  }
+
+
+  .bento-layout {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "b a b2"
+      "b c c";
+    grid-template-columns: minmax(250px, 3fr) minmax(200px, 2fr) minmax(200px, 2fr);
+    grid-template-rows: 1fr 1fr; 
+    padding: 0; 
+    gap: 0; 
+  }
+  
+  .bento-layout .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem; 
+    
+  }
+  
+  .bento-layout .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px;
+  }
+  
+  .bento-layout .b {
+    grid-area: b;
+  }
+  
+  .bento-layout .a {
+    grid-area: a;
+  }
+  
+  .bento-layout .b2 {
+    grid-area: b2;
+  }
+  
+  .bento-layout .c {
+    grid-area: c;
+  }
+  
+
+  h2 {
+    font-size: 48px;
+}
+
+.bento-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.4s ease;
+    z-index: 1;
+  }
+
+  .bento-text {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    color: white;
+    box-sizing: border-box;
+
+    .bento-text-main,
+    .bento-text-highlight {
+      margin: 0;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .bento-hover-text {
+      position: absolute;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      pointer-events: none;
+
+      p {
+        margin: 0;
+      }
+
+      .arrow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1.5rem;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+      }
+    }
+  }
+
+  // HOVER EFFEKT
+  &:hover {
+    &::after {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    img {
+      transform: scale(1.02);
+    }
+
+    .bento-text {
+      justify-content: flex-start;
+      padding-top: 2rem;
+
+      .bento-text-main,
+      .bento-text-highlight {
+        transform: translateY(-10px);
+      }
+
+      .bento-hover-text {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+
+        .arrow {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+
+.bento-text-highlight{
+  font-size: 24px;
+}
+
+.box{
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer;
+}
+
+
+
+  
+
+  
+// fotokonkurrence begynder
+.konkurrence-box {
+    display: flex;
+    gap: 40px;
+    background: linear-gradient(0deg, #FFF3D8 0%, #FFF3D8 100%);
+    padding: 32px;
+    border-radius: 12px;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    margin-top: 128px;
+  }
+  
+  .konkurrence-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .konkurrence-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .konkurrence-content h3 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .konkurrence-content p {
+    margin: 0 0 0.5rem;
+    color: #555;
+  }
+  
+  .konkurrence-icons {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+ .konk-icon{
+    display: flex;
+    
+    margin-right: 56px;
+    gap: 0.5rem;
+ }
+.konk-text{
+    display: flex;
+}
+ .konk-text p{
+    display: flex;
+    margin-right: 60px;
+ }
+  .konkurrence-button {
+    align-self: flex-end;
+    padding: 12px 26px;
+    border: 2px solid #F9CB80;
+    border-radius: 60px;
+    background: #F9CB80;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 40px;
+  }
+  
+  .konkurrence-button:hover {
+    background: transparent;
+    border: 2px solid #F9CB80;
+  }
+  
+  
+  // tabs styling 
+.tre-museer{
+    margin-top: 128px;
+}
+
+  .tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 120px;
+  }
+
+  .tab {
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .tab.active {
+    border-bottom: 3px solid #ECA619;
+  }
+
+  
+
+  .tab-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .tab-header svg {
+    width: 31px;
+    height: 30px;
+    align-self: flex-start;
+  margin-top: 2px;
+  }
+  
+  .tab-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .tab-overskrift {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .tab-text {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+
+  .tab-header:hover h4 {
+  color: #ECA619;
+  fill: #ECA619; 
+}
+.tab-header:hover .tab-icon {
+  fill: #ECA619;
+}
+.tab-header:hover path.icon-stroke {
+  stroke: #ECA619;
+}
+path.icon-stroke {
+  stroke: black;
+  fill: none;
+  transition: stroke 0.3s ease;
+}
+
+  // tabs slutter
+  .museer-overskrift{
+    text-align: center;
+    font-size: 48px;
+    font-family: Lust;
+    margin-bottom: 56px;
+}
+
+.museer-container {
+  
+
+  .museer-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .museer-image {
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 8px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .museer-text {
+      flex: 1;
+    
+      h3 {
+        margin-top: 0;
+        font-size: 32px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lokation-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        svg {
+          flex-shrink: 0;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      button {
+        
+        padding: 12px 26px;
+        gap: 8px;
+        background-color: #F9CB80;
+        border: 2px solid #F9CB80;
+        color: black;
+        border-radius: 60px;
+        cursor: pointer;
+        width: 40%;
+      }
+      button:hover{
+        background: #ffffff;
+        border: 2px solid #F9CB80;
+      }
+    }
+  }
+}
+
+
+
+  .tre-museer{
+    background-image: url('../img/Bg_TreMuseer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  
+    width: 100vw;
+    margin-left: calc(-10vw);
+    margin-right: calc(-10vw);
+    
+  }
+  .tre-museer-indhold {
+    margin: 0 10%; 
+  }
+
+ 
+  .museer-text p{
+    margin-bottom: 24px;
+  }
+ 
+
+ 
+
+  // gallery bento box start
+  .gallery-container{
+    margin-top: 128px;
+  }
+
+  .gallery-container h2{
+    margin-bottom: 56px;
+  }
+
+  .bento-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, minmax(300px, auto));
+    gap: 12px;
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .item {
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+
+    .a { grid-column: 1 / 3; grid-row: 1 / 2; } 
+    .b { grid-column: 3 / 5; grid-row: 1 / 3; } 
+   
+    .g { grid-column: 5 / 9; grid-row: 1 / 2; } 
+    
+    .c { grid-column: 1 / 3; grid-row: 2 / 3; }
+    .d { grid-column: 5 / 7; grid-row: 3 / 4; }
+    .e { grid-column: 5 / 7; grid-row: 2 / 3; }
+    
+    .f { grid-column: 1 / 5; grid-row: 3 / 4; } 
+    .h { grid-column: 5 / 9; grid-row: 3 / 4; } 
+  }
+ 
+  
+  .bento-img-wrapper2 {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+  
+    .bento-text2 {
+      position: absolute;
+      inset: 0;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+      z-index: 2;
+      pointer-events: none;
+  
+      .bento-text-main-hidden {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+      }
+  
+      .bento-hover-text-hidden {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        pointer-events: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+  
+        p {
+          margin: 0;
+          flex: 1;
+        }
+  
+        .arrow {
+          font-size: 1.5rem;
+          opacity: 0;
+          transform: translateY(10px);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: transparent;
+      transition: background 0.3s ease;
+      z-index: 1;
+    }
+  
+    &:hover {
+      &::after {
+        background: rgba(0, 0, 0, 0.6);
+      }
+  
+      img {
+        transform: scale(1.02);
+      }
+  
+      .bento-text2 {
+        justify-content: space-between;
+        padding: 1rem;
+  
+        .bento-text-main-hidden {
+          opacity: 1;
+          transform: translateY(0);
+          font-size: 18px;
+        }
+  
+        .bento-hover-text-hidden {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+          font-size: 14px;
+  
+          .arrow {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+  
+  
+
+  
+  
+  // nyhedsbrev sektion
+  .nyhedsbrev-box{
+    display: flex;
+    gap: 40px;
+    background: linear-gradient(94deg, #618196 12.86%, #1F2930 99.71%);
+    border-radius: 12px;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  .nyhedsbrev-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 2rem;
+    padding: 48px;
+  }
+
+  .nyhedsbrev-content p{
+    width: 450px;
+  }
+
+  .nyhedsbrev-img{
+    flex: 1;
+    max-width: 550px;
+    margin-top: 10px;
+    
+  }
+
+  .nyhedsbrev-img img{
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border-radius: 12px;
+   
+  }
+
+  .email-input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  
+    input {
+      width: 100%;
+      padding: 9px 16px 8px 20px;
+      padding-right: 195px; 
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+     
+    }
+  
+    button.arrow {
+      all: unset;
+      font-size: 18px;
+      color: #989898;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .email-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  
+  
+  
+  // mobil version
+
+  @media (max-width: 768px) {
+  
+   .hero-billedet{
+    margin: 80px 0px 80px 0px;
+   }
+    .info-box__buttons {
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      gap: 20px; 
+    }
+  
+    .info-box__buttons .btn1,
+    .info-box__buttons .btn2 {
+      width: 70px;
+      height: 70px;
+      padding: 0; 
+      border-radius: 50%;
+      background: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0;
+    }
+    
+    .info-box__buttons .btn1 svg,
+    .info-box__buttons .btn2 svg {
+      width: 40px;
+      height: 40px;
+      fill: currentColor;
+      margin-left: 7px;
+    }
+    .info-box__buttons .btn1 {
+      color: #fdfdfd;
+      background: #ECA619;
+    }
+  
+    .info-box__buttons .btn2 {
+      color: #fafafa;
+      background: #7098DD;
+    }
+  
+    .info-box__divider {
+      display: none;
+    }
+
+    .oplevelser h2, p{
+     margin: 16px 24px 16px 24px;
+    }
+
+    .bento-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; 
+    }
+    
+    .bento-layout .box {
+      width: 100%; 
+    }
+
+    .konkurrence-box {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;   
+                   
+    }
+    
+    .konkurrence-image img {
+      max-width: 100%;        
+      height: auto;
+    }
+
+    .konkurrence-button{
+      align-self: center;
+    }
+
+
+    .tabs {
+      display: flex;
+      flex-direction: row;      
+      flex-wrap: wrap;          
+      justify-content: center;  
+      gap: 3rem;
+      margin: 2rem;
+    }
+  
+    .tab-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 120px;             
+    }
+  
+    .tab-text{
+      display: none;
+    }
+  
+    h4.tab-overskrift{
+      margin-top: 10px;
+    }
+   
+    .bento-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nyhedsbrev-img{
+      display: none;
+    }
+    
+}
+  
+@media (max-width: 500px) {
+.hero-billedet {
+  background-image: url('../img/hero2-skagenmuseum.webp');
+  height: 30vw;
+  margin: 80px 0px 80px 0px;
+}
+
+.hero-billedet h1 {
+  font-size: 42px; 
+}
+
+.hero-gradient {
+  
+  padding: 1rem;
+  gap: 16px;
+  display: flex;
+  width: 500px;
+  height: 310px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+
+.hero-gradient h1{
+  font-size: 32px;
+  font-family: lust;
+}
+}
+
+
+@media (max-width: 425px) {
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .info-box__text {
+    h3, p {
+      font-size: 1rem;
+      white-space: normal;
+    }
+  }
+
+  .info-box__buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .info-box__buttons .btn1,
+  .info-box__buttons .btn2 {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-box__buttons .btn1 svg,
+  .info-box__buttons .btn2 svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+  }
+
+  .info-box__buttons .btn1 {
+    background-color: #ECA619;
+    border: 2px solid #ECA619;
+    color: white;
+  }
+
+  .info-box__buttons .btn2 {
+    background-color: #7098DD;
+    border: 2px solid #7098DD;
+    color: white;
+  }
+
+  .info-box__buttons .btn1:hover {
+    background: white;
+    color: #ECA619;
+    border-color: #ECA619;
+  }
+
+  .info-box__buttons .btn2:hover {
+    background: white;
+    color: #7098DD;
+    border-color: #7098DD;
+  }
+
+  .oplevelser h2,
+  .oplevelser p {
+    margin: 12px 16px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .hero-gradient {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    gap: 16px;
+  }
+
+  .hero-gradient h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .tab-header {
+    width: 100%;
+  }
+
+  h4.tab-overskrift {
+    font-size: 1rem;
+  }
+
+  .konkurrence-box {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .bento-layout .box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .bento-container {
+    gap: 1rem;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+    gap: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .info-box__text h3 {
+    font-size: 1.25rem;
+    white-space: normal; 
+  }
+
+  .info-box__text p {
+    font-size: 0.95rem;
+  }
+
+  .info-box__buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .info-box__buttons .btn1,
+  .info-box__buttons .btn2 {
+    width: 100%;
+    max-width: 160px;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .nyhedsbrev-box {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 16px;
+    margin: 2rem 1rem;
+    align-items: stretch;
+  }
+
+  .nyhedsbrev-content {
+    gap: 1.5rem;
+  }
+
+  .nyhedsbrev-content p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .email-input-wrapper {
+    max-width: 100%;
+  }
+
+  .email-input-wrapper input {
+    padding-right: 48px;
+    font-size: 1rem;
+  }
+
+  .email-input-wrapper .arrow {
+    font-size: 16px;
+    right: 12px;
+  }
+
+  .nyhedsbrev-img {
+    display: none; 
+  }
+
+  .konkurrence-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px 16px;
+    margin: 2rem 1rem;
+  }
+
+  .konkurrence-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .konkurrence-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .konkurrence-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .konkurrence-icons {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .konk-icon {
+    margin-right: 0;
+  }
+
+  .konk-text {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .konk-text p {
+    margin-right: 0;
+    font-size: 0.95rem;
+  }
+
+  .konkurrence-button {
+    align-self: center;
+    margin-top: 24px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+}

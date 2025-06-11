@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skagens museum projekt om ægte unge, og mulighed for at læse mere om det.">
+    <meta name="keywords" content="skagens, skagen museer, skagens museum, ægte ung, projekt, unge, information, youtube video.">
+   <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Skagens kunstmuseum - Ægte Ung</title>
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <!--Start på navigation-->
+   <div class="wrapper">
+    <header class="main-header">
+        <!--Top menuen start-->
+        <div class="top-box">
+          <div class="top-box-wrapper">
+            <ul class="top-menu">
+              <li><a href="#">Ehverv</a></li>
+              <li><a href="#">Klubben</a></li>
+              <li><a href="#">Presse</a></li>
+              <li><a href="#">Skagen Air</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                <path d="M0.0800781 0.914062H15.5801V10.4141H0.0800781V0.914062Z" fill="#D22F27"/>
+                <path d="M15.5801 4.91406H6.33008V0.914062H4.83008V4.91406H0.0800781V6.41406H4.83008V10.4141H6.33008V6.41406H15.5801V4.91406Z" fill="white"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      <!--Top menu slutter-->
+      <!--Start på navigationen med dropdown-->
+      <nav class="main-nav mainNav">
+        <div class="nav-container">
+          <a href="index.html">
+          <img class="logo" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens museers logo">
+        </a>
+          <ul class="nav-menu">
+            <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+              <a href="#" class="dropdown-link">Besøg <span class="arrow-down"></span></a>
+              <ul class="dropdown">
+                <li><a href="billet-side.html">Åbningstider og priser</a></li>
+                <li><a href="#">Omvisningg</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Museumbutikken</a></li>
+                <li><a href="planlagning.html">Praktisk information</a></li>
+                <li><a href="#">Skoleudflygt</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Udstillinger <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                  <li><a href="#">Aktuelle Udstillinger</a></li>
+                  <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="skagensmalerne.html">Skagensmalerne</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="arrangementer.html">Arrangementer</a>
+                <ul class="dropdown">
+            
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Om museerne <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown dropdown-click">
+                <a href="#" class="dropdown-link">Vidste du? <span class="arrow-down"></span></a>
+                <ul class="dropdown">
+                  <li><a href="#">Vielser</a></li>
+                  <li><a href="#">Støt os</a></li>
+                  <li><a href="#">Cafe</a></li>
+                  <li><a href="#">Fotobestilling</a></li>
+                  <li><a href="#">Låneanmodninger</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="aegte-ung.html">Ægte ung</a>
+                <ul class="dropdown">
+                 
+                </ul>
+              </li>
+          </ul>
+          <div class="buy-button">
+            <div class="button-wrapper">
+            <a href="#">Køb billet til kunsten</a>
+          </div>
+        </div>
+        </div>
+        </nav>
+        
+      </header>
+    </div>
+     <!--burger på naviagtionen-->
+     <a href="index.html">
+      <img class="logo-mobile" src="./assets/img/skagenskunstmuseum-logo.png" alt="Skagens logo">
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        &#9776; <!-- burger ikon -->
+      </button>
+      <!--navigation på mobil-->
+      <nav class="mobile-nav" id="mobile-menu" aria-hidden="true">
+        <ul class="top-menu">
+          <li><a href="#">Ehverv</a></li>
+          <li><a href="#">Klubben</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Skagen Air</a></li>
+          <li><a href="#">Top 5</a></li>
+        </ul>
+
+        <ul>
+          <li class="has-dropdown dropdown-click"> <!--Dropdown-click er til javascript, så hvis det er en class med dette navn, så åbner drop-down-->
+            <a href="#">Besøg</a>
+            <ul class="dropdown">
+              <li><a href="billet-side.html">Åbningstider og priser</a></li>
+              <li><a href="#">Omvisningg</a></li>
+              <li><a href="#">Cafe</a></li>
+              <li><a href="#">Museumbutikken</a></li>
+              <li><a href="planlagning.html">Praktisk information</a></li>
+              <li><a href="#">Skoleudflygt</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown dropdown-click">
+              <a href="#">Udstillinger</a>
+              <ul class="dropdown">
+                <li><a href="udstillinger.html">Udstilling oversigt</a></li>
+                <li><a href="#">Aktuelle Udstillinger</a></li>
+                <li><a href="udvalgteVearker.html">Kunstværker</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="skagensmalerne.html">Skagensmalerne</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="arrangementer.html">Arrangementer</a>
+              <ul class="dropdown">
+          
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Om museerne</a>
+              <ul class="dropdown">
+                  <li><a href="om-museerne.html">Museerne oversigt</a></li>
+                  <li><a href="selve-huset.html">Skagens kunstmuseum</a></li>
+                  <li><a href="selve-huset.html">Anchers hus</a></li>
+                  <li><a href="selve-huset.html">Drachmanns</a></li>
+                  <li><a href="#">Samlingen</a></li>
+                  <li><a href="#">Vores mission</a></li>
+                  <li><a href="#">Konserveringsværksted</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown dropdown-click">
+              <a href="#">Vidste du?</a>
+              <ul class="dropdown">
+                <li><a href="#">Vielser</a></li>
+                <li><a href="#">Støt os</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Fotobestilling</a></li>
+                <li><a href="#">Låneanmodninger</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="aegte-ung.html">Ægte ung</a>
+              <ul class="dropdown">
+               
+              </ul>
+            </li>
+          <li><a href="#" class="buy-button">Køb billet</a></li>
+        </ul>
+      </nav>
+    <!--Slut på naviagtionen-->
+    <main>   
+      <section class="hero-text">
+          <h1>Ægte ung</h1>
+          <p class="heroIntrotekst">Et ungeprojekt på Skagens museum</p>
+      </section>
+      <div class="aegte-ung_vid">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QZ_m5BDFOXU?si=VgM5sr31D4XvSHbg&amp;start=40"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="eagteUngintro">Skagens Kunstmuseer har ansat 7 nordjyske unge i en kreativ arbejdsgruppe, som skal hjælpe museet med at udvikle udstillinger og oplevelser – og med at tiltrække flere unge.</p>
+      <hr class="ægteung">
+      <div class="ungContent">
+        <p class="ungFirstContent">Hver tirsdag aften går syv unge mennesker ind ad døren på Skagens Kunstmuseer. De arbejder på udstillinger, kigger på malerier, klipper film og lægger planer. De er ansat af Skagens Kunstmuseer som kreative medarbejdere, der skal samarbejde med museets ansatte om at tiltrække andre unge.</p>
+        <p>Ebbesen understreger, at aldersgruppen har en vigtig plads i både museets historie og fremtid: ”Skagensmalerne og den kunstnerkoloni, der dannede sig omkring dem, var selv unge, da de kom til Skagen, så det er altså helt i deres ånd, at vi knytter den her flok til os. Det er afgørende, at så mange forskellige aldersgrupper som muligt forholder sig til vores samling og giver den deres perspektiver.”</p>
+      </div>
+      <div class="ungContent">
+        <p class="quote">
+          Vi vil være et museum for alle - vi har et kæmpestort hjerte, der banker for unge, og derfor er jeg glad for, at de her syv seje mennesker vil hjælpe os med at udvikle vores projekter, der taler til dem og deres jævnaldrende.
+        </p>
+        <p class="quoteBy">Citat fra Lisette Vind Ebbesen, direktør for Skagens Kunstmuseer</p>  
+    </div>
+      <div class="ungContent">
+        <h3>Et år med ung til ung-metoden</h3>
+        <p class="ungFirstContent">Projektet hedder Ægte Ung og er støttet af Bikubenfonden og Slots- og Kulturstyrelsen. Det er struktureret efter ung til ung-metoden som fordrer, at unge er de bedste til at udvikle tilbud til deres jævnaldrende – der tales altså ikke om de unge, men med de unge. Gennem en række workshops møder de syv unge museets medarbejdere og får indsigt i de processer og redskaber, medarbejderne bruger i deres daglige arbejde – lige fra budgetter over projektledelse til formidling og udstillingsopbygning. Projektet rummer også studieture til København, Göteborg og Oslo, hvor ungegruppen fra Skagens Kunstmuseer samler inspiration fra museer, kunsthaller og andre skandinaviske ungeinitiativer.</p>
+        <p>Ungegruppen bliver engageret i en række af museets projekter og skal sideløbende udvikle deres egne kulturtilbud med afsæt i museets samling, som målrettes deres egen aldersgruppe. Projektets strategiske sigte er altså dobbelt. På den ene side gør museet sig til en platform, hvor ungegruppen kan udfolde deres idéer og tanker og på den anden side bidrager projektet til at udvikle Skagens Kunstmuseer.Ungegruppen er ansat resten af 2024.</p>
+      </div>
+      <div class="ungImgContainer">
+        <img class="ung-img" src="./assets/img/unge/aegteunggruppefoto.png" alt="Gruppe billede af alle fra ægte unge. Stående fra venstre: Magnus Sigaard, Signe McNeal Lauritzen, Johanna Siiger Ejstrud, Johan Gabrielsson, Anna Fries Moland. Siddende fra venstre: Anton Thorbøll, Kalinka Ranfelt-Tørngren">
+        <p class="ungImgDescription">Stående fra venstre: Magnus Sigaard, Signe McNeal Lauritzen, Johanna Siiger Ejstrud, Johan Gabrielsson, Anna Fries Moland. Siddende fra venstre: Anton Thorbøll, Kalinka Ranfelt-Tørngren</p>
+      </div>
+      <div class="ungContent">
+        <h3>En ny generation på museet</h3>
+        <p class="ungFirstContent">Hvem er de så, de unge? De fleste er nordjyder, som enten er kommet hjem efter flere år udenfor regionen eller aldrig har forladt den. De er mellem 19 og 28 år gamle, og de er lige dér, hvor man ofte befinder sig i det aldersspænd: Nogle studerer, nogle holder sabbatår, nogle udforsker interesser og nogle læser fag op. Alt sammen mens de kaster friske blikke på Skagens Kunstmuseer.</p>
+        <p class="ungFirstContent">Og så er de en flok, som nægter at acceptere, at inspirerende kulturtilbud for unge kun skal findes i storbyerne: ”Jeg søgte det her job, fordi jeg kunne mærke, at jeg altid tog til Aarhus eller København efter kulturelle tilbud, selvom jeg bor i Skagen nu. Og jeg synes, at det kunne være fedt, hvis der var den samme type arrangementer i Nordjylland. Så det kunne jeg godt tænke mig at se, om vi kan skabe her,” siger Johanna Siiger Ejstrud.</p>
+        <p>Johan Gabrielsson, som er vokset op i Skagen, bakker hende op: ”Jeg håber på, at der er nogle andre unge mennesker, der kan blive inspireret og få øjnene op for kunst. Jeg forstod det jo ikke, før jeg kom væk: Det er slet ikke alle byer, især ikke så små byer med så få indbyggere, der har en historie som den her. Så jeg håber, at andre kan få øjnene op for, at den her kunst og kultur er vildt fed, og at vi kan skabe et fællesskab omkring den.”</p>
+      </div>
+      <div class="ungImgContainer">
+        <img class="ung-img subImg" src="./assets/img/unge/meh2.png" alt="en gruppe af unge mennesker sidder ved et bord og diskuterer">
+      </div>
+      <div class="ungContent">
+      <p class="ungFirstContent">De syv unge i gruppen har vidt forskellige baggrunde, men de deler interessen for kunst og kultur i bred forstand og, ikke mindst, for at give deres begejstring videre. Anna Frida Rimmer drømmer for eksempel om at gøre Skagens Kunstmuseer til et naturligt sted at komme: ”Jeg drømmer om at gøre museet til en slags tredje sted for unge mennesker i Skagen. Hvis det første er hjem, og det andet er skolen, skal museet være det tredje sted. Det skal være et attraktivt sted at komme, og jeg vil gerne give unge i Skagen et tilhørsforhold til museet, så de har lyst til at komme igen. Ligesom… bringe en ny generation ind på museet.”</p>
+      <p>Magnus Sigaard fremhæver det, han betragter som en særlig mulighed, når man arbejder i Skagen: ”Min opfattelse er, at de unge, der bor heroppe, er yngre end i studiebyer. Tænk, hvis vi kunne få fat i dem. Måske har de lyst til at bruge noget af det senere i deres liv, måske får de nogle helt nye interesser og vinkler på, hvordan de har lyst til at leve deres liv, hvis vi finder på noget sjovt heroppe. Jeg har en lille drøm om, at vi kan være med til at gøre en helt konkret, positiv forskel i nogens liv.”</p>
+    </div>
+      <div class="ungContent sponser">
+        <h3>Projektet støtter af</h3>
+        <div class="logo">
+          <img src="./assets/img/unge/bf-logo.png" alt="Bikubenfondens logo">
+          <img src="./assets/img/unge/slks-logo.png" alt="Slots- og kulturstyrelsens logo">
+      </div>
+       
+      </div>
+      
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./assets/img/skagenskunstmusum-footer.png" alt="Skagens logo">
+      </div>
+    
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h4>Genvej</h4>
+          <a href="#">English</a>
+          <a href="#">Deutsch</a>
+          <a href="#">Medarbejder</a>
+          <a href="#">Ledigestillinger</a>
+          <div class="footer__column">
+       
+          
+            <div class="copyright">
+              <div class="copyright__text">
+                <div class="copyright__topline">
+                  <img src="./assets/icons/copyright.png" alt="Copyright ikon">
+                  <p>Skagens Kunstmuseer</p>
+                </div>
+                <p class="cvr">CVR: 12345678</p>
+              </div>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        <div class="footer__column">
+          <h4>Vores museer</h4>
+          <a href="#">Skagens kunstmuseum</a>
+          <a href="#">Anchers hus</a>
+          <a href="#">Drachmanns hus</a>
+        </div>
+        <div class="footer__column">
+          <h4>Besøg</h4>
+          <a href="#">Åbningstider og priser</a>
+          <a href="#">Omvisning</a>
+          <a href="#">Cafe</a>
+          <a href="#">Museumbutikken</a>
+          <a href="#">Undervisning</a>
+        </div>
+        <div class="footer__column">
+          <h4>Kontakt os</h4>
+          <p>Info@skagensmuseum.dk</p>
+          <p>Tel. +45 9844 6444</p>
+          <p>Brøndumsvej 4 DK-9990 Skagen</p>
+
+          <div class="footer__icons">
+            <a href="#"><img src="./assets/icons/facebook-footer.png" alt="Facebook"></a>
+            <a href="#"><img src="./assets/icons/instagram-footer.png" alt="Instagram"></a>
+            <a href="#"><img src="./assets/icons/twitter-footer.png" alt="Twitter"></a>
+            <a href="#"><img src="./assets/icons/pinterest-footer.png" alt="Pinterest"></a>
+          </div>
+
+          <div class="cookies">
+            <p>Cookie Privatlivspolitik</p>
+          </div>
+        </div>
+       
+      </div>
+    </footer>
+      <script src="./assets/js/nav.js"></script>
+     
+</body>
+</html>
