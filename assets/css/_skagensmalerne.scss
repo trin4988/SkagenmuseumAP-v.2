@@ -45,8 +45,10 @@
   .card p {
     margin: 5px 0;
     padding: 5px;
-    font-weight: bold;
+    font-weight: 400;
+    font-style: normal;
     color: inherit;
+    font-family: "Special Elite", system-ui;
   }
   
   .card:visited,
