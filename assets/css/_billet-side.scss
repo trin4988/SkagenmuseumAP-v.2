@@ -257,3 +257,21 @@
     }
   }
   
+  @media (max-width: 425px) {
+    .tilbage-knap-museer{
+      margin: 0;
+    }
+      .huset-indhold-intro{
+        margin: 0;
+      }
+
+      .huset-tekst p{
+        margin-bottom: 12px;
+      }
+
+      .huset-info1{
+        margin: 12px 0px 12px 0px;
+      }
+
+  }
+
