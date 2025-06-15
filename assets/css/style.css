@@ -474,6 +474,48 @@ body.dark-mode .main-header .main-nav img .logo {
   }
 }
 
+.dropdown-icon {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  display: inline-block;
+}
+
+.has-dropdown.open .dropdown-icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.mobile-nav .dropdown {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-nav .has-dropdown.open .dropdown {
+  display: block;
+  max-height: 500px;
+  /* stort nok til indholdet */
+}
+
+.mobile-nav .dropdown li a {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.mobile-nav .dropdown li a:hover {
+  background: #eaeaea;
+}
+
 .footer {
   background: radial-gradient(46.76% 24.38% at 5.02% 89.88%, rgba(184, 215, 251, 0.4) 37.41%, rgba(184, 215, 251, 0) 100%), radial-gradient(41.46% 36.27% at 26.32% 55.32%, #FFF 0%, #FFF 24.34%, rgba(255, 255, 255, 0.6) 56.21%, rgba(255, 255, 255, 0.8) 81.02%, rgba(255, 255, 255, 0.4) 100%), radial-gradient(41.4% 40.8% at 89.1% -8.84%, rgba(184, 215, 251, 0.8) 0%, rgba(184, 215, 251, 0) 100%), radial-gradient(46.77% 25.89% at 90.56% 63.66%, #FFF 0%, #FFF 24.34%, rgba(255, 255, 255, 0.6) 56.21%, #FFF 81.02%, rgba(255, 255, 255, 0.4) 100%), radial-gradient(42.15% 64.32% at 9.67% 25.74%, rgba(255, 193, 64, 0.5) 38.48%, rgba(254, 223, 158, 0) 100%), radial-gradient(42.28% 33.01% at 84.43% 92.99%, #FFCA5A 0%, rgba(254, 215, 132, 0.6) 56.49%, rgba(254, 223, 158, 0) 100%), #FFF;
   padding: 3rem 1rem;
