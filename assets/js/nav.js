@@ -69,5 +69,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.querySelectorAll('.dropdown-click > a').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const parent = link.parentElement;
+    parent.classList.toggle('open');
+
+    // Luk andre åbne dropdowns, hvis du ønsker det
+    document.querySelectorAll('.dropdown-click').forEach(item => {
+      if (item !== parent) item.classList.remove('open');
+    });
+  });
+});
+
   
   
