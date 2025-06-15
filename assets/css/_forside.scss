@@ -1040,7 +1040,6 @@ path.icon-stroke {
   .oplevelser h2,
   .oplevelser p {
     margin: 12px 16px;
-    font-size: 0.95rem;
     text-align: center;
   }
 
@@ -1066,8 +1065,21 @@ path.icon-stroke {
     width: 100%;
   }
 
+  .tab-header svg {
+    align-self: center;
+  }
+
   h4.tab-overskrift {
     font-size: 1rem;
+  }
+
+  .museer-container .museer-wrapper .museer-text .lokation-info{
+    display: flex;
+    justify-content: center;
+  }
+
+  .museer-container .museer-wrapper .museer-text button {
+    width: 70%;
   }
 
   .konkurrence-box {
@@ -1114,7 +1126,6 @@ path.icon-stroke {
   .info-box__buttons .btn2 {
     width: 100%;
     max-width: 160px;
-    font-size: 0.9rem;
     padding: 10px 16px;
   }
 

@@ -1965,6 +1965,9 @@ path.icon-stroke {
     font-size: 32px;
     font-family: lust;
   }
+  .nyhedsbrev-content h3 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 425px) {
@@ -2040,7 +2043,6 @@ path.icon-stroke {
   .oplevelser h2,
   .oplevelser p {
     margin: 12px 16px;
-    font-size: 0.95rem;
     text-align: center;
   }
   .hero-gradient {
@@ -2064,8 +2066,24 @@ path.icon-stroke {
   .tab-header {
     width: 100%;
   }
+  .tab-header svg {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
   h4.tab-overskrift {
     font-size: 1rem;
+  }
+  .museer-container .museer-wrapper .museer-text .lokation-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .museer-container .museer-wrapper .museer-text button {
+    width: 70%;
   }
   .konkurrence-box {
     padding: 1rem;
@@ -2116,7 +2134,6 @@ path.icon-stroke {
   .info-box__buttons .btn2 {
     width: 100%;
     max-width: 160px;
-    font-size: 0.9rem;
     padding: 10px 16px;
   }
   .nyhedsbrev-box {
@@ -2133,6 +2150,9 @@ path.icon-stroke {
   }
   .nyhedsbrev-content {
     gap: 1.5rem;
+  }
+  section.nyhedsbrev-box .nyhedsbrev-content h3 {
+    text-align: center;
   }
   .nyhedsbrev-content p {
     width: 100%;
@@ -2172,6 +2192,7 @@ path.icon-stroke {
   }
   .konkurrence-content h3 {
     font-size: 1.2rem;
+    text-align: center;
   }
   .konkurrence-content p {
     font-size: 1rem;
