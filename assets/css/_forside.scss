@@ -965,6 +965,10 @@ path.icon-stroke {
   font-size: 32px;
   font-family: lust;
 }
+
+.nyhedsbrev-content h3{
+  text-align: center;
+}
 }
 
 
@@ -1126,6 +1130,10 @@ path.icon-stroke {
     gap: 1.5rem;
   }
 
+  section.nyhedsbrev-box .nyhedsbrev-content h3{
+    text-align: center;
+  }
+
   .nyhedsbrev-content p {
     width: 100%;
     font-size: 1rem;
@@ -1166,6 +1174,7 @@ path.icon-stroke {
 
   .konkurrence-content h3 {
     font-size: 1.2rem;
+    text-align: center;
   }
 
   .konkurrence-content p {
@@ -1200,4 +1209,6 @@ path.icon-stroke {
     max-width: 200px;
     text-align: center;
   }
+
+
 }
