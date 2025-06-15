@@ -2,6 +2,109 @@
 @import url("https://use.typekit.net/bvf0dpa.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+body.dark-mode {
+  background-color: black;
+  color: #ffffff;
+}
+
+body.dark-mode .darkmode-icon path {
+  fill: white;
+}
+
+button#darkmode-toggle {
+  font-size: 24px;
+}
+
+/* Når dark mode er aktiv (body har klassen .dark-mode) */
+body.dark-mode .main-header .top-box .top-box-wrapper .top-menu li a {
+  color: white;
+}
+
+body.dark-mode .main-nav {
+  background-color: black;
+}
+
+body.dark-mode .main-header .main-nav .nav-menu li.has-dropdown > a {
+  color: white;
+}
+
+body.dark-mode .main-header .main-nav .nav-menu li .dropdown li a {
+  color: #ffffff;
+}
+
+body.dark-mode .main-header .main-nav .nav-menu li .dropdown {
+  background: black;
+}
+
+body.dark-mode .main-header .main-nav .buy-button .button-wrapper a {
+  background-color: black;
+}
+
+body.dark-mode .hero-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(10%, rgba(0, 0, 0, 0.95)), color-stop(50.23%, #000), color-stop(90%, rgba(0, 0, 0, 0.95)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 10%, #000 50.23%, rgba(0, 0, 0, 0.95) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+body.dark-mode .hero-gradient h1 {
+  color: white;
+}
+
+body.dark-mode .info-box__text h3 {
+  color: white;
+}
+
+body.dark-mode .info-box__text p {
+  color: white;
+}
+
+body.dark-mode .info-bold {
+  color: white;
+}
+
+body.dark-mode .konkurrence-content h3 {
+  color: black;
+}
+
+body.dark-mode .tre-museer {
+  background-image: url("../img/treeMuseerDarkMode.webp");
+}
+
+body.dark-mode path.icon-stroke {
+  stroke: white;
+  fill: none;
+  -webkit-transition: stroke 0.3s ease;
+  transition: stroke 0.3s ease;
+}
+
+body.dark-mode .tab-header svg {
+  color: white;
+}
+
+body.dark-mode footer {
+  background: radial-gradient(59.47% 49.15% at 12.37% 100%, rgba(4, 74, 154, 0.12) 24.04%, rgba(4, 74, 154, 0.39) 37.41%, rgba(4, 74, 154, 0) 100%), radial-gradient(41.46% 36.27% at 26.32% 55.32%, #000 0%, #000 24.34%, rgba(0, 0, 0, 0.6) 56.21%, rgba(0, 0, 0, 0.8) 81.02%, rgba(0, 0, 0, 0.4) 100%), radial-gradient(41.4% 40.8% at 89.1% -8.84%, rgba(4, 74, 154, 0.8) 0%, rgba(4, 74, 154, 0) 100%), radial-gradient(46.77% 25.89% at 90.56% 63.66%, #000 0%, #000 24.34%, rgba(0, 0, 0, 0.6) 56.21%, #000 81.02%, rgba(0, 0, 0, 0.4) 100%), radial-gradient(42.15% 64.32% at 9.67% 25.74%, rgba(255, 188, 47, 0.5) 38.48%, rgba(255, 188, 47, 0) 100%), radial-gradient(42.28% 33.01% at 84.43% 92.99%, #FFBC2F 0%, rgba(255, 188, 47, 0.6) 56.49%, rgba(255, 188, 47, 0) 100%), #000;
+}
+
+body.dark-mode .footer__column h4 {
+  color: white;
+}
+
+.logo1 {
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: none;
+}
+
+body.dark-mode .logo1 {
+  display: inline;
+  width: 32px;
+  height: 63px;
+}
+
+body.dark-mode .main-header .main-nav img .logo {
+  display: none;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 0 50px;
@@ -71,12 +174,6 @@
 }
 
 .main-header .top-menu svg {
-  width: 24px;
-  height: 12px;
-}
-
-.main-header svg.darkmode {
-  font-size: 24px;
   width: 18px;
   height: 18px;
 }
@@ -1834,9 +1931,9 @@ path.icon-stroke {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 16px;
     gap: 16px;
   }
@@ -1925,22 +2022,8 @@ path.icon-stroke {
   .tab-header {
     width: 100%;
   }
-  .tab-header svg {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
   h4.tab-overskrift {
     font-size: 1rem;
-  }
-  .museer-container .museer-wrapper .museer-text button {
-    width: 70%;
-    margin-top: 2rem;
-  }
-  .lokation-info {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
   .konkurrence-box {
     padding: 1rem;
@@ -1991,7 +2074,7 @@ path.icon-stroke {
   .info-box__buttons .btn2 {
     width: 100%;
     max-width: 160px;
-    font-size: 0;
+    font-size: 0.9rem;
     padding: 10px 16px;
   }
   .nyhedsbrev-box {
@@ -5195,7 +5278,7 @@ p {
   font-weight: 600;
 }
 
-.udstillingImg {
+.udstillingImg2 {
   width: 475px;
   height: auto;
 }
@@ -5208,7 +5291,7 @@ p {
   margin-bottom: 56px;
 }
 
-.udstillingContent {
+.udstillingContent2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5220,6 +5303,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
 }
 
 .udstillingLocation {

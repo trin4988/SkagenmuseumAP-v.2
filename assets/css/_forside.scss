@@ -971,7 +971,7 @@ path.icon-stroke {
 @media (max-width: 425px) {
   .info-box {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 16px;
     gap: 16px;
   }
@@ -1062,21 +1062,10 @@ path.icon-stroke {
     width: 100%;
   }
 
-  .tab-header svg{
-    align-self: center;
-  }
-
   h4.tab-overskrift {
     font-size: 1rem;
   }
 
-  .museer-container .museer-wrapper .museer-text button {
-    width: 70%;
-    margin-top: 2rem;
-  }
-.lokation-info{
-  align-self: center;
-}
   .konkurrence-box {
     padding: 1rem;
     text-align: center;
@@ -1121,7 +1110,7 @@ path.icon-stroke {
   .info-box__buttons .btn2 {
     width: 100%;
     max-width: 160px;
-    font-size: 0;
+    font-size: 0.9rem;
     padding: 10px 16px;
   }
 
@@ -1212,4 +1201,3 @@ path.icon-stroke {
     text-align: center;
   }
 }
-
