@@ -5457,7 +5457,7 @@ p {
 
 /* -----Responsiv----- */
 @media screen and (max-width: 1120px) {
-  .udstillingContent {
+  .udstillingContent2 {
     gap: 8px;
   }
   .udstillingLocation {
@@ -5474,7 +5474,7 @@ p {
   .udstillingContainer {
     display: block;
   }
-  .udstillingImg {
+  .udstillingImg2 {
     width: 100%;
   }
   .udstillingLocation {
