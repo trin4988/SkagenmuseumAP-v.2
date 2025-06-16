@@ -4215,9 +4215,6 @@ button.huset-btn:hover::before {
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    display: none;
-  }
   .divider-wrapper-huset {
     display: -webkit-box;
     display: -ms-flexbox;
